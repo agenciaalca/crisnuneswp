@@ -13,15 +13,15 @@
 
         <!--Slides-->
         <ul class="slides">
-            <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sliderImages/slide1.jpg" class="slide"  alt=""/></li>
-            <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sliderImages/slide2.jpg" class="slide" alt=""/></li>
+            <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sliderImages/slide1.png" class="slide"  alt=""/></li>
+            <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sliderImages/slide1.png" class="slide" alt=""/></li>
         </ul>
         <!--End slides-->
 
 
         <!--Slides inner-->
         <div class="slidesInner">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logoL.png" alt=""/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logocor1.png" alt=""/>
             <p>A Creative Agency Crafting modern and unique
                 <span>Web Templates &amp; Print Support</span></p>
 
