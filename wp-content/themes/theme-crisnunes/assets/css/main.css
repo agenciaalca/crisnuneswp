@@ -769,7 +769,7 @@ h2.expTitle{
 
 
 .clients{
-	background: url(../images/parallaxBg/parallax.jpg);
+	background: url(./parallaxBg/parallax.jpg);
 	background-attachment: fixed;
 	background-position: center top;
 	background-repeat: repeat-y;
@@ -921,7 +921,7 @@ h2.expTitle{
 
 
 .testimonials {
-	background: url(../images/parallaxBg/parallax2.jpg);
+	background: url(./parallaxBg/parallax2.jpg);
 	background-attachment: fixed;
 	background-position: center top;
 	background-repeat: repeat-y;
@@ -1128,7 +1128,7 @@ h2.expTitle{
 /*Facts*/
 
 .facts{
-	background: url(../images/parallaxBg/parallax3.jpg);
+	background: url(./parallaxBg/parallax3.jpg);
 	background-attachment: fixed;
 	background-position: center top;
 	background-repeat: repeat-y;
@@ -1326,7 +1326,7 @@ h2.expTitle{
 /*Process*/
 
 .process{
-	background: url(../images/parallaxBg/parallax4.jpg);
+	background: url(./parallaxBg/parallax4.jpg);
 	background-attachment: fixed;
 	background-position: center top;
 	background-repeat: repeat-y;

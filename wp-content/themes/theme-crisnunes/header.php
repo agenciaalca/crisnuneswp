@@ -2,34 +2,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="author" content="Benaissa Ghrib" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Agencia Alca" />
+        <meta name="description" content="Cris Nunes - Coach profissional"/>
+        <meta name="keywords" content="coach"/>
+        
 
-        <title>PIXEL : Multipurposes Creative Template</title>
-
-        <!--Stylesheet-->
-
-        <!--[if IE 7]>
-        <link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+        <title><?= bloginfo(); wp_title('-', true, 'left'); ?> </title>
         <?php wp_head(); ?>
-
-
-        <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
-
-        <!--[if lt IE 8]>
-        <style>
-        /* For IE < 8 (trigger hasLayout) */
-        .clearfix {
-            zoom:1;
-        }
-        </style>
-        <![endif]-->
-
-
-
+        <!--Stylesheet-->
 
     </head>
 
@@ -72,7 +53,7 @@
                         <div class="three columns logoHolder">
                             <!--Logo-->
                             <div class="logo">
-                                <a  href="../MULTIPLEPAGE"><img src="images/logoD.png" alt=""/></a>
+
                             </div>
                             <!--End logo-->
                         </div>
