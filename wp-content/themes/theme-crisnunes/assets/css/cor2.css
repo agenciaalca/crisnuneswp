@@ -1,0 +1,7 @@
+:root{
+    /* cor vermelho */
+    --cor: #932A3B;
+}
+.logo{
+    background-image: url("../img/logo/logocor2.png");
+}

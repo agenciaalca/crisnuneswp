@@ -1,0 +1,8 @@
+:root{
+    /* cor azul escuro */
+    --cor: #315A92;
+}
+
+.logo{
+    background-image: url("../img/logo/logocor5.png");
+}

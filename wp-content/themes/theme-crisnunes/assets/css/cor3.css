@@ -1,0 +1,8 @@
+:root{
+    /* cor amarelo */
+    --cor: #E4DF6E;
+}
+
+.logo{
+    background-image: url("../img/logo/logocor3.png");
+}

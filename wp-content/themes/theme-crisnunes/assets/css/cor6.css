@@ -1,0 +1,9 @@
+:root{
+    /* cor bege */
+    --cor: #DAC4B6;
+}
+
+.logo{
+    background-image: url("../img/logo/logocor6.png");
+}
+
