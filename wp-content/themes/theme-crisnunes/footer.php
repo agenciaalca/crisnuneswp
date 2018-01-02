@@ -49,9 +49,6 @@
 </div><!--End wrapper-->
 <?php wp_footer(); ?>
 
-<!-- Google analytics -->
 
-
-<!-- End google analytics -->
 </body>
 </html>

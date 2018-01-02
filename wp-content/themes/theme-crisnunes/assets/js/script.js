@@ -413,38 +413,12 @@ $('.mainNav li a').click(function(){
 
 
 
-//--------------------------------- Twitter feed --------------------------------//
-
-
-jQuery(".tweets").tweet({
-  join_text: false,
-  username: "BenaissaGhrib", // Change username here
-  modpath: './twitter/',
-  avatar_size: false,
-  count: 2,
-  auto_join_text_default: ' we said, ',
-  auto_join_text_ed: ' we ',
-  auto_join_text_ing: ' we were ',
-  auto_join_text_reply: ' we replied to ',
-  auto_join_text_url: ' we were checking out ',
-  loading_text: 'Loading tweets...'
-
-});
-
-
-
-//--------------------------------- End twitter feed --------------------------------//
-
-
-
-
-
 
 //---------------------------------- Instagram feed -----------------------------------------//
 
 jQuery.fn.spectragram.accessData={
-	accessToken:'305801553.467ede5.94e8f22591af44eea81bdbd1ca3bff04',
-	clientID:'e659391279a64365a13bfb26b4caf15d'}
+	accessToken:'322548972.1677ed0.6c838619fa454449ac3b0acb3df8314e',
+	clientID:'322548972'}
 	
 $('.instaFeed').spectragram('getUserFeed', {
 		query: 'insideenvato', //Change the instagram feed user to display the feed that you want.

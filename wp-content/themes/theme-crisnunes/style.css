@@ -8,18 +8,10 @@ Version: 1.0
 Tags: responsive, blog, bootstrap
 */
 
-/*
-*	PIXEL (HTML version)
-* 	Copyright 2015
-* 	www.mutationmedia.net
-* 	Created by : Benaissa Ghrib
-*
-*/
-
 
 /* Table of Content
 ==================================================
-        /* Preloader*/
+/* Preloader*/
 /* Wrapper*/
 /* Header*/
 /* Navigation*/
@@ -39,5 +31,5 @@ Tags: responsive, blog, bootstrap
 }
 
 .logo{
-    background-image: url("./images/logo/logocor1.png");
+    background-image: url("../images/logo/logocor1.png");
 }

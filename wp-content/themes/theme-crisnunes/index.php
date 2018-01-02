@@ -283,7 +283,7 @@
                         <div class="postContent">
 
                             <div class="postTitle">
-                                <h1><a href="blog_single.html">Image blog post</a></h1>
+                                <h1><a href="<?php echo get_template_directory_uri(); ?>/blog_single.php">Image blog post</a></h1>
 
                                 <!--Post meta-->
                                 <div class="postMeta">
@@ -297,8 +297,8 @@
 
                             <!--Post image-->
                             <div class="postMedia">
-                                <a href="blog_single.html">
-                                    <img alt="" src="images/blogImages/bg3.jpg">
+                                <a href="<?php echo get_template_directory_uri(); ?>/blog_single.php">
+                                    <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/images/blogImages/bg3.jpg">
                                 </a>
                             </div>
                             <!--End post image-->
@@ -306,7 +306,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                            <a class="btn more border" href="blog_single_sb.html">Read more</a>
+                            <a class="btn more border" href="<?php echo get_template_directory_uri(); ?>/blog_single_sb.html">Read more</a>
 
 
                         </div>
@@ -324,7 +324,7 @@
                         <div class="postContent">
 
                             <div class="postTitle">
-                                <h1><a href="blog_single.html">slider blog post</a></h1>
+                                <h1><a href="<?php echo get_template_directory_uri(); ?>/blog_single.html">slider blog post</a></h1>
 
                                 <!--Post meta-->
                                 <div class="postMeta">
@@ -339,8 +339,8 @@
                             <!--Post image-->
                             <div class="postMedia postSlider slider flexslider">
                                 <ul class="slides">
-                                    <li><a href="blog_single.html"><img src="images/blogImages/bg1.jpg" alt=""/></a></li>
-                                    <li><a href="blog_single.html"><img src="images/blogImages/bg2.jpg" alt="" /></a></li>
+                                    <li><a href="<?php echo get_template_directory_uri(); ?>/blog_single.html"><img src="<?php echo get_template_directory_uri(); ?>assets/images/blogImages/bg1.jpg" alt=""/></a></li>
+                                    <li><a href="<?php echo get_template_directory_uri(); ?>/blog_single.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blogImages/bg2.jpg" alt="" /></a></li>
                                 </ul>
                             </div>
                             <!--End post image-->
@@ -367,7 +367,7 @@
 
 
                             <div class="postTitle">
-                                <h1><a href="blog_single.html">Audio Blog Post</a></h1>
+                                <h1><a href="blog_single.php.html">Audio Blog Post</a></h1>
 
 
                                 <!--Post meta-->
