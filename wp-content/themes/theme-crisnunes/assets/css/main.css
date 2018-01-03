@@ -2722,10 +2722,12 @@ ul#category li a {
 
 }
 
-
+.socials{
+    position:relative;
+}
 
 .insta {
-    position:relative;
+    
     padding:60px 0;
     height:213px;
     overflow:hidden;
@@ -2747,7 +2749,7 @@ ul#category li a {
 
 
 .instaIco i{
-    color: #2c2c2c;
+    color: #fff;
     display: block;
     font-size: 30px;
     margin-bottom: 16px;
@@ -2756,7 +2758,7 @@ ul#category li a {
 
 
 .instaTitle h3{
-    color:#2c2c2c;
+    color:#fff;
     font-size:20px;
     text-align:center;
 }
@@ -2946,15 +2948,19 @@ span.arrow i{
 
 
 .contactIntro.largeIntro {
-    width: 75%;
+    width: 80%;
 }
 
 
 
 
-.inputColumns  .column1 ,  .inputColumns  .column2 {
+.inputColumns  .column1 {
     float: left;
-    width: 50%;
+    width: 70%;
+} 
+.inputColumns  .column2 {
+    float: left;
+    width: 30%;
 }
 
 .inputColumns  .column1 .columnInner {
@@ -2966,9 +2972,9 @@ span.arrow i{
 }
 
 .contactForm input[type="text"], .contactForm textarea, .replyForm input[type="text"], .replyForm textarea {
-    background: #f8f8f8;
+    background: #ccc;
     border: 0 none;
-    color: #666666;
+    color: #080808;
     font-family: inherit;
     font-size: 13px;
     margin: 0 0 14px;
@@ -3097,8 +3103,9 @@ span.arrow i{
 
 
 .footerBottom p{
-    margin-top:15px;
-    font-size:12px;
+    margin-top:5%;
+    font-size: 16px;
+    letter-spacing: 5px;
 }
 
 

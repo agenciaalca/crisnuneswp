@@ -33,6 +33,7 @@ Tags: responsive, blog, bootstrap
 .logo{
     background-image: url("./assets/images/logo/logocor1.png");
 }
+
 .slides .overlay:before{
     background: rgba(223, 85, 107, 0.5);
     content: "";
@@ -99,4 +100,14 @@ Tags: responsive, blog, bootstrap
 }
 .socials{
     background-image: url('./assets/images/bg-paralax-insta.png');
+}
+.socials .overlay:before{
+    background: rgba(223, 85, 107, 0.5);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top:0;
+    z-index:0;
 }

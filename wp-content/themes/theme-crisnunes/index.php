@@ -384,10 +384,10 @@
 
 
     <!--Socials section-->
-    <section class="socials tCenter">
+    <section class="socials tCenter ">
 
         <!--Instagram-->
-        <div class="insta">
+        <div class="insta overlay">
 
 
             <div class="instaInner">
@@ -396,7 +396,7 @@
 
             <div class="instaTitle">
                 <div class="instaIco"><i class="icon-instagram"></i></div>
-                <h3>Follow us on instagram<span>@pixel</span></h3>
+                <h3>Siga no instagram<span>@coachcrisnunes</span></h3>
             </div>
 
         </div>
@@ -416,7 +416,7 @@
 
             <!--Title-->
             <div class="title dark ">
-                <h1>get in touch with us<span class="plus">+</span></h1>
+                <h1>contato<span class="plus">+</span></h1>
             </div>
             <!--End title-->
 
@@ -424,19 +424,7 @@
             <div class="container clearfix">
 
                 <!--Contact inner -->
-                <div class="contactInner margLTop fourteen columns ">
-
-
-                    <div class="contactIco"><i class="icon-paper-plane"></i></div>
-                    <!--Contact intro -->
-                    <div class="contactIntro largeIntro  ">
-                        <h3>feel free to send us an email</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam eaque ipsa quae ab illo inventore.  
-                        </p>
-                    </div>
-                    <!--Contact intro -->
-
+                <div class="contactInner fourteen columns ">
 
                     <!--Contact form-->
                     <div class="contactForm tLeft margTMedium">
@@ -447,15 +435,22 @@
 
                                 <div class="column1">
                                     <div class="columnInner">
-                                        <input type="text" name="name" id="name" value="" placeholder="Name *">
+                                        <input type="text" name="name" id="name" value="" placeholder="Nome *">
+                                    </div>
+                                    <div class="columnInner">
+                                        <input type="text" name="email" id="email" value="" placeholder="Email *">
+                                    </div>
+                                    <div class="columnInner">
+                                        <input type="text" name="telefone" id="telefone" value="" placeholder="Telefone *">
                                     </div>
                                 </div>
 
                                 <!--Column-->
                                 <div class="column2">
                                     <div class="columnInner">
-                                        <input type="text" name="email" id="email" value="" placeholder="Email *">
+                                        <p>Av, 4 - St. Oeste, Goiânia - GO, 74280-220</p>
                                     </div>
+                                    
                                 </div>
                                 <!--End column-->
 
@@ -467,15 +462,14 @@
                             <div class="inputColumns clearfix">
 
                                 <div class="column1">
-                                    <div class="columnInner">
-                                        <input type="text" name="website" id="website" value="" placeholder="WebSite">
-                                    </div>
+                                    <textarea rows="5" cols="45" id="message" placeholder="Mensagem *" name="mensagem"></textarea>
                                 </div>
 
                                 <!--Column-->
                                 <div class="column2">
                                     <div class="columnInner">
-                                        <input type="text" name="subject" id="subject" value="" placeholder="Subject ">
+                                        <p>(62) 3480293840</p>
+                                        <p>(62) 2309480293</p>
                                     </div>
                                 </div>
                                 <!--End column-->
@@ -483,8 +477,8 @@
                             </div>
                             <!--End input columns-->
 
-                            <textarea rows="10" cols="45" id="message" placeholder="Message *" name="message"></textarea>
-                            <div id="submit" class="btn">Send Message</div>
+                            
+                            <div id="submit" class="btn">Enviar Mensagem</div>
                         </form>
 
 
