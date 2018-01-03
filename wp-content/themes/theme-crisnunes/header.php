@@ -64,9 +64,9 @@
                             <a href="#" class="mobileBtn" ><i class="icon-menu"></i></a>
                             <!--Navigation-->
                             <nav class="mainNav" >
+                            <?php wp_nav_menu( $args );  ?>
 
-
-                                <ul>
+<!--                                <ul>
                                     <li><a class="scroll" href="#about">About us</a></li>
                                     <li><a class="scroll" href="#services">Services</a></li>
                                     <li><a class="scroll" href="#pricing">Pricing</a></li>
@@ -74,7 +74,7 @@
                                     <li><a class="scroll" href="#blog">Blog</a></li>
                                     <li><a class="scroll" href="#contact">Contact</a></li>
 
-                                </ul>
+                                </ul>-->
 
                             </nav>
                             <!--End navigation-->
