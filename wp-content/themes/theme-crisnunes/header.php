@@ -53,7 +53,7 @@
                         <div class="three columns logoHolder">
                             <!--Logo-->
                             <div class="logo">
-
+                                <!-- imagem vindo do css -->
                             </div>
                             <!--End logo-->
                         </div>

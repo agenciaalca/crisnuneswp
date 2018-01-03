@@ -1,48 +1,32 @@
 <?php include_once 'header.php'; ?>
 
-
-
-
-
 <!--Main slider holder-->
 <div class="mainSliderHolder">
 
     <!--Main slider-->
     <div class="mainSlider flexslider">
 
-
         <!--Slides-->
         <ul class="slides">
-            <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sliderImages/slide1.png" class="slide"  alt=""/></li>
-            <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sliderImages/slide1.png" class="slide" alt=""/></li>
+            <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sliderImages/slide1.png" height="918px" class="slide"  alt=""/></li>
+            <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sliderImages/slide1.png"  height="918px" class="slide" alt=""/></li>
         </ul>
         <!--End slides-->
-
 
         <!--Slides inner-->
         <div class="slidesInner">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logocor1.png" alt=""/>
-            <p>A Creative Agency Crafting modern and unique
-                <span>Web Templates &amp; Print Support</span></p>
-
-
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
             <!--Socials slider-->
             <ul class="socialsSlider">
-
                 <li><a href="#"><i class="icon-facebook"></i></a></li>
-                <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                <li><a href="#"><i class="icon-twitter"></i></a></li>
                 <li><a href="#"><i class="icon-instagram"></i></a></li>
-
             </ul>
             <!--End socials slider-->
 
         </div>
-
         <!--End slides inner-->
-
-
     </div>
     <!--End main slider-->
 </div>
@@ -50,12 +34,8 @@
 
 
 
-
 <!--About section-->
 <section id="about" class="tCenter">
-
-
-
 
     <!--About intro-->
     <div class="aboutIntro bgGreyDark  ofsTop ofsBottom margLBottom">
@@ -66,19 +46,20 @@
 
             <!--Title-->
             <div class="title light ofsBMedium">
-                <h1>Welcome to our Agency<span class="plus">+</span></h1>
+                <h1>Sobre<span class="plus">+</span></h1>
             </div>
             <!--End title-->
 
 
             <!--About intro content-->
             <div class="aboutIntroContent">
-                <h1>We Design and Develop for the <span>Web</span> &amp; <span>Mobile</span></h1>
-                <p>Pixel agency is a visual and interactive communication agency specialized in internet industry,
-                    sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <h1>Lorem Ipsum is simply dummy, <span>CONSECTETUER</span></h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
 
-                <a class="btn" href="#">view our portfolio</a>
+                <a class="btn" href="#">saiba mais</a>
             </div>
             <!--End about intro content-->
 
@@ -100,7 +81,7 @@
 
             <!--Title-->
             <div class="title dark ofsBottom">
-                <h1>what we do<span class="plus">+</span></h1>
+                <h1>SERVIÇOS<span class="plus">+</span></h1>
             </div>
             <!--End title-->
 
@@ -110,7 +91,6 @@
 
                 <!--Expertise ico-->
                 <div class="expIco ">
-                    <i class="icon-feather"></i>
                 </div>
 
                 <!--End expertise ico-->
@@ -118,9 +98,9 @@
 
                 <!--Expertise details-->
                 <div class="expDet">
-                    <h2 class="expTitle">Branding &amp; print </h2>
+                    <h2 class="expTitle">LOREM IPSUM</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <a href="#">Read More...</a>
+                    <a href="#">saiba mais</a>
                 </div>
                 <!--End Expertise details-->
             </div>
@@ -132,51 +112,39 @@
 
                 <!--Expertise ico-->
                 <div class="expIco ">
-                    <i class="icon-tools"></i>
                 </div>
-
                 <!--End expertise ico-->
 
 
                 <!--Expertise details-->
                 <div class="expDet">
-                    <h2 class="expTitle">design &amp; development </h2>
+                    <h2 class="expTitle">Lorem ipsum</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <a href="#">Read More...</a>
+                    <a href="#">saiba mais</a>
                 </div>
                 <!--End Expertise details-->
             </div>
             <!--End expertise-->
-
-
 
             <!--Expertise-->
             <div class="exp one-third column tCenter ">
 
                 <!--Expertise ico-->
                 <div class="expIco ">
-                    <i class="icon-mobile"></i>
                 </div>
-
                 <!--End expertise ico-->
-
 
                 <!--Expertise details-->
                 <div class="expDet">
-                    <h2 class="expTitle">mobile development </h2>
+                    <h2 class="expTitle">Lorem ipsum</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <a href="#">Read more...</a>
+                    <a href="#">saiba mais</a>
                 </div>
                 <!--End Expertise details-->
             </div>
             <!--End expertise-->
-
-
-
         </div>
         <!--End container-->
-
-
     </div>
     <!--End expertise holder -->
 
@@ -190,27 +158,20 @@
 
             <!--Services shorten -->
             <div class="servSht">
-
                 <div class="servImg overlay"></div>
-
                 <div class="inner">
-                    <h1>our services</h1>	
+                    <h1>palestras</h1>	
                 </div>
-
             </div>
             <!--End services shorten -->				
 
 
             <!--Works shorten -->
             <div class="worksSht">
-
-
                 <div class="workImg overlay"></div>
-
                 <div class="inner">
-                    <h1>our portfolio</h1>
+                    <h1>psicologia positiva</h1>
                 </div>
-
             </div>
             <!--End works shorten -->
 
@@ -254,7 +215,7 @@
 
             <!--Title-->
             <div class="title dark ">
-                <h1>latest blog posts<span class="plus">+</span></h1>
+                <h1>últimas postagens no blog<span class="plus">+</span></h1>
             </div>
             <!--End title-->
 
@@ -264,14 +225,14 @@
 
                 <!--Large intro-->
                 <div class="largeIntro  ofsTSmall">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam eaque ipsa quae ab illo inventore.  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore.
+                    
                     </p>
                 </div>
                 <!--End large intro-->
-
-
-
 
                 <!--Latest holder-->
                 <div class="latestHolder margTop clearfix tLeft">
@@ -339,7 +300,7 @@
                             <!--Post image-->
                             <div class="postMedia postSlider slider flexslider">
                                 <ul class="slides">
-                                    <li><a href="<?php echo get_template_directory_uri(); ?>/blog_single.html"><img src="<?php echo get_template_directory_uri(); ?>assets/images/blogImages/bg1.jpg" alt=""/></a></li>
+                                    <li><a href="<?php echo get_template_directory_uri(); ?>/blog_single.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blogImages/bg1.jpg" alt=""/></a></li>
                                     <li><a href="<?php echo get_template_directory_uri(); ?>/blog_single.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blogImages/bg2.jpg" alt="" /></a></li>
                                 </ul>
                             </div>
@@ -404,7 +365,7 @@
 
                 <!--View all-->
                 <div class="viewAll margLTop">
-                    <a class="btn" href="blog.html">view all blog post</a>	
+                    <a class="btn" href="blog.html">veja mais</a>	
                 </div>
                 <!--End view all-->
 
@@ -415,13 +376,6 @@
 
         </div>
         <!--End blog holder-->
-
-
-
-
-
-
-
 
 
 

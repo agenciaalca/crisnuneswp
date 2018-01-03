@@ -83,7 +83,7 @@ function wp_inclusao_styles() {
     wp_enqueue_style('magnific-css', get_template_directory_uri() . '/assets/css/magnific-popup.css');
     wp_enqueue_style('flexslider-css', get_template_directory_uri() . '/assets/css/flexslider.css');
     wp_enqueue_style('style', get_stylesheet_uri());
-    geraCor();
+//    geraCor();
 }
 add_action('wp_enqueue_scripts', 'wp_inclusao_styles');
 

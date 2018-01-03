@@ -31,5 +31,72 @@ Tags: responsive, blog, bootstrap
 }
 
 .logo{
-    background-image: url("../images/logo/logocor1.png");
+    background-image: url("./assets/images/logo/logocor1.png");
+}
+.slides .overlay:before{
+    background: rgba(223, 85, 107, 0.5);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top:0;
+    z-index:0;
+}
+.plus{
+    color: var(--cor, #DF556B);
+    font-weight: bold;
+}
+/* background sobre */
+.bgGreyDark{
+    background-image: url('./assets/images/background.png');
+}
+
+.expIco{
+    background-image: url('./assets/images/icon-servicos.png');
+}
+
+.exp.selected .expIco{
+    background-image: url('./assets/images/icon-servicos2.png');
+}
+
+.expDet a{
+    color: var(--cor, #DF556B);
+}
+.workBtn{ /* barra retangular call to action */
+    background-color: var(--cor, #DF556B);
+}
+/* imagem esquerda call to action */
+.servImg{
+    background-image: url('./assets/images/palestras.png');
+    
+}
+/* imagem direita call to action */
+.workImg{
+    background-image: url('./assets/images/psicologia-positiva.png');
+}
+
+/* background color com transparencia call to action */
+.servSht .overlay:before,
+.worksSht .overlay:before{
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top:0;
+    z-index:0;
+}
+.postMeta span.metaComments a{
+    color: var(--cor, #DF556B);
+}
+
+.postLarge  a.more{
+    background-color: var(--cor, #DF556B);
+    color: #fff;
+    border-color: var(--cor, #DF556B);
+}
+.socials{
+    background-image: url('./assets/images/bg-paralax-insta.png');
 }
