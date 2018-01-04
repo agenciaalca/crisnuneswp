@@ -182,7 +182,7 @@ h3 {font-size:14px;}
 #link .panel_wrapper, #link div.current {height:125px;}
 #image .panel_wrapper, #image div.current {height:200px;}
 #plugintable thead {font-weight:bold; background:#DDD;}
-#plugintable, #about #plugintable td {border:1px solid #919B9C;}
+#plugintable, #sobre #plugintable td {border:1px solid #919B9C;}
 #plugintable {width:96%; margin-top:10px;}
 #pluginscontainer {height:290px; overflow:auto;}
 #colorpicker #preview {display:inline-block; padding-left:40px; height:14px; border:1px solid black; margin-left:5px; margin-right: 5px}

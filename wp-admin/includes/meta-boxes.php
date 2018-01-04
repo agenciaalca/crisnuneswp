@@ -1073,7 +1073,7 @@ function link_xfn_meta_box($link) {
 		<th scope="row"><?php /* translators: xfn: http://gmpg.org/xfn/ */ _e('friendship') ?></th>
 		<td><fieldset><legend class="screen-reader-text"><span><?php /* translators: xfn: http://gmpg.org/xfn/ */ _e('friendship') ?></span></legend>
 			<label for="contact">
-			<input class="valinp" type="radio" name="friendship" value="contact" id="contact" <?php xfn_check('friendship', 'contact'); ?> />&nbsp;<?php /* translators: xfn: http://gmpg.org/xfn/ */ _e('contact') ?>
+			<input class="valinp" type="radio" name="friendship" value="contact" id="contato" <?php xfn_check('friendship', 'contact'); ?> />&nbsp;<?php /* translators: xfn: http://gmpg.org/xfn/ */ _e('contact') ?>
 			</label>
 			<label for="acquaintance">
 			<input class="valinp" type="radio" name="friendship" value="acquaintance" id="acquaintance" <?php xfn_check('friendship', 'acquaintance'); ?> />&nbsp;<?php /* translators: xfn: http://gmpg.org/xfn/ */ _e('acquaintance') ?>

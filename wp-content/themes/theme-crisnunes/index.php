@@ -35,7 +35,7 @@
 
 
 <!--About section-->
-<section id="about" class="tCenter">
+<section id="sobre" class="tCenter">
 
     <!--About intro-->
     <div class="aboutIntro bgGreyDark  ofsTop ofsBottom margLBottom">
@@ -72,7 +72,7 @@
 
 
     <!--Expertise holder-->
-    <div class="expertiseHolder margLBottom">
+    <div id="servicos" class="expertiseHolder margLBottom">
 
 
         <!--Container-->
@@ -150,7 +150,7 @@
 
 
     <!--Shorten -->
-    <div class="shorten clearfix">
+    <div id="call" class="shorten clearfix">
 
 
         <!--Shorten inner -->
@@ -408,7 +408,7 @@
 
 
     <!--Contact section-->
-    <section id="contact" class="tCenter ">
+    <section id="contato" class="tCenter ">
 
 
         <!--Contact holder -->
