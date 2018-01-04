@@ -230,10 +230,10 @@
 
 }
 
-.logo img {
-
-    margin-top: 20px;
-    width: 42%;
+.logo {
+    margin-top: 10px;
+    width: 162px;
+    height: 40px;
 }
 
 /*End header*/
@@ -2877,75 +2877,12 @@ span.arrow i{
     float: none;
 }
 
-
 .contactInner{
     background:#ffffff;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-    padding:20px 40px 50px 40px;
-    border-radius:3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    padding:10px 40px 50px 40px;
     z-index:2;
     position: relative;
 }
-
-
-
-.contactIco {
-    background: #2c2c2c;
-    color: #f1f1f1;
-    display: block;
-    height: 56px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    width: 40px;
-    top:-48px;
-}
-
-
-.contactIco i {
-    font-size: 30px;
-    left: -2px;
-    line-height: 55px;
-    position: relative;
-}
-
-
-.contactIco:before {
-    border-bottom: 28px solid transparent;
-    border-right-color: #2c2c2c !important;
-    border-right-style: solid;
-    border-right-width: 14px;
-    border-top: 28px solid transparent;
-    content: "";
-    height: 0;
-    left: -14px;
-    position: absolute;
-    top: 0;
-    width: 0;
-}
-.contactIco:after {
-    border-bottom: 28px solid transparent;
-    border-left-color: #2c2c2c !important;
-    border-left-style: solid;
-    border-left-width: 14px;
-    border-top: 28px solid transparent;
-    bottom: 0;
-    content: "";
-    height: 0;
-    position: absolute;
-    right: -14px;
-    width: 0;
-}
-
-
 
 .contactIntro.largeIntro {
     width: 80%;

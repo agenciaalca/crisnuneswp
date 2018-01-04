@@ -15,7 +15,7 @@
 
         <!--Slides inner-->
         <div class="slidesInner">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logocor1.png" alt=""/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logocor1.png" alt=""/>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
             <!--Socials slider-->
@@ -443,6 +443,7 @@
                                     <div class="columnInner">
                                         <input type="text" name="telefone" id="telefone" value="" placeholder="Telefone *">
                                     </div>
+                                    <textarea rows="5" cols="45" id="message" placeholder="Mensagem *" name="mensagem"></textarea>
                                 </div>
 
                                 <!--Column-->
@@ -450,32 +451,37 @@
                                     <div class="columnInner">
                                         <p>Av, 4 - St. Oeste, Goiânia - GO, 74280-220</p>
                                     </div>
+                                    <div class="columnInner">
+                                        <p>(62) 3480293840</p>
+                                        <p>(62) 2309480293</p>
+                                    </div>
                                     
                                 </div>
-                                <!--End column-->
+                                
+                               
 
                             </div>
                             <!--End input columns-->
 
 
-                            <!--Input columns-->
+<!--                            Input columns
                             <div class="inputColumns clearfix">
 
                                 <div class="column1">
                                     <textarea rows="5" cols="45" id="message" placeholder="Mensagem *" name="mensagem"></textarea>
                                 </div>
 
-                                <!--Column-->
+                                Column
                                 <div class="column2">
                                     <div class="columnInner">
                                         <p>(62) 3480293840</p>
                                         <p>(62) 2309480293</p>
                                     </div>
                                 </div>
-                                <!--End column-->
+                                End column
 
                             </div>
-                            <!--End input columns-->
+                            End input columns-->
 
                             
                             <div id="submit" class="btn">Enviar Mensagem</div>

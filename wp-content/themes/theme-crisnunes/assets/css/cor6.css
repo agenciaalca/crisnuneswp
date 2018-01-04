@@ -4,6 +4,79 @@
 }
 
 .logo{
-    background-image: url("../images/logo/logocor6.png");
+    background-image: url("../images/logocor6.png");
 }
 
+.slides .overlay:before{
+    background: rgba(218, 196, 182, 0.5);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top:0;
+    z-index:0;
+}
+/* icone plus */
+.plus{
+    color: var(--cor, #DAC4B6);
+    font-weight: bold;
+}
+/* background sobre */
+.bgGreyDark{
+    background-image: url('../images/background.png');
+}
+/* icone serviços rosa */
+.expIco{
+    background-image: url('../images/icon-servicos.png');
+}
+/* icone serviços rosa claro */
+.exp.selected .expIco{
+    background-image: url('../images/icon-servicos2.png');
+}
+/* serviços saiba mais  */
+.expDet a{
+    color: var(--cor, #DAC4B6);
+}
+/* barra retangular call to action */
+.workBtn{ 
+    background-color: var(--cor, #DAC4B6);
+}
+/* imagem esquerda call to action */
+.servImg{
+    background-image: url('../images/palestras.png');
+}
+/* imagem direita call to action */
+.workImg{
+    background-image: url('../images/psicologia-positiva.png');
+}
+
+/* descrição post */
+.postMeta span.metaComments a{
+    color: var(--cor, #DAC4B6);
+}
+/* botao post saiba mais */
+.postLarge  a.more{
+    background-color: var(--cor, #DAC4B6);
+    color: #fff;
+    border-color: var(--cor, #DAC4B6);
+}
+/* background instagram */
+.socials{
+    background-image: url('../images/bg-paralax-insta.png');
+}
+/* background color rosa */
+.socials .overlay:before{
+    background: rgba(218, 168, 182, 0.5);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top:0;
+    z-index:0;
+}
+/* over botao contato */
+.contactForm #submit:hover{
+    background-color: var(--cor, #DAC4B6);
+}

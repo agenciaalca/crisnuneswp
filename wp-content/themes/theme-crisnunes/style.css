@@ -8,30 +8,14 @@ Version: 1.0
 Tags: responsive, blog, bootstrap
 */
 
-
-/* Table of Content
-==================================================
-/* Preloader*/
-/* Wrapper*/
-/* Header*/
-/* Navigation*/
-/* Main slider*/
-/* About */
-/* Services */
-/* Pricing*/
-/* Portfolio*/
-/* Blog*/
-/* Contact*/
-/* Footer*/
-/* Media queries*/
-
 :root{
     /* COR PADRAO ROSA */
     --cor: #DF556B;
 }
 
 .logo{
-    background-image: url("./assets/images/logo/logocor1.png");
+    
+    background-image: url("./assets/images/logocor1.png");
 }
 
 .slides .overlay:before{
@@ -44,6 +28,7 @@ Tags: responsive, blog, bootstrap
     top:0;
     z-index:0;
 }
+/* icone plus */
 .plus{
     color: var(--cor, #DF556B);
     font-weight: bold;
@@ -52,31 +37,30 @@ Tags: responsive, blog, bootstrap
 .bgGreyDark{
     background-image: url('./assets/images/background.png');
 }
-
+/* icone serviços rosa */
 .expIco{
     background-image: url('./assets/images/icon-servicos.png');
 }
-
+/* icone serviços rosa claro */
 .exp.selected .expIco{
     background-image: url('./assets/images/icon-servicos2.png');
 }
-
+/* serviços saiba mais  */
 .expDet a{
     color: var(--cor, #DF556B);
 }
-.workBtn{ /* barra retangular call to action */
+/* barra retangular call to action */
+.workBtn{ 
     background-color: var(--cor, #DF556B);
 }
 /* imagem esquerda call to action */
 .servImg{
     background-image: url('./assets/images/palestras.png');
-    
 }
 /* imagem direita call to action */
 .workImg{
     background-image: url('./assets/images/psicologia-positiva.png');
 }
-
 /* background color com transparencia call to action */
 .servSht .overlay:before,
 .worksSht .overlay:before{
@@ -89,18 +73,21 @@ Tags: responsive, blog, bootstrap
     top:0;
     z-index:0;
 }
+/* descrição post */
 .postMeta span.metaComments a{
     color: var(--cor, #DF556B);
 }
-
+/* botao post saiba mais */
 .postLarge  a.more{
     background-color: var(--cor, #DF556B);
     color: #fff;
     border-color: var(--cor, #DF556B);
 }
+/* background instagram */
 .socials{
     background-image: url('./assets/images/bg-paralax-insta.png');
 }
+/* background color rosa */
 .socials .overlay:before{
     background: rgba(223, 85, 107, 0.5);
     content: "";
@@ -110,4 +97,8 @@ Tags: responsive, blog, bootstrap
     left:0;
     top:0;
     z-index:0;
+}
+/* over botao contato */
+.contactForm #submit:hover{
+    background-color: var(--cor, #DF556B);
 }
