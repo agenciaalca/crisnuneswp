@@ -1022,6 +1022,49 @@ h2.expTitle{
 /*End about section*/
 
 
+/*Socials*/
+
+
+
+.socials {
+	background: url(../images/bg-paralax-insta.png);
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: repeat-y;
+	background-size: cover;
+	min-height: 330px;
+	position:relative;
+}
+
+
+.container .socialsHolder{
+	float:none;
+	display:inline-block;
+}
+
+
+.social a{
+	color: #ffffff;
+	display:block;
+	padding:30px 0;
+	border:2px solid #ffffff;
+	background:rgba(255,255,255,.2);
+}
+
+
+.social a:hover{
+	color: #eea915;
+	background:rgba(255,255,255,1);
+}
+
+
+.social i{
+	font-size:30px;
+}
+
+
+
+/*End socials*/
 
 
 /*Services section*/
@@ -2745,6 +2788,7 @@ ul#category li a {
 
 .instaTitle {
     position:relative;
+    padding-top: 3%;
 }
 
 

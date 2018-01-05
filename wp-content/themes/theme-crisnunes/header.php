@@ -32,9 +32,11 @@
                 <?php endif; ?>
                         <div class="container clearfix">
                             <div class="three columns logoHolder">
-                                <div class="logo">
+                                <a href="http://agenciaalca.com/projetos/crisnunes/">
+                                    <div class="logo">
                                     <!-- imagem vindo do css -->
-                                </div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="thirteen columns tRight">
                                 <a href="#" class="mobileBtn" ><i class="icon-menu"></i></a>

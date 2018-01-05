@@ -60,10 +60,7 @@
     color: #fff;
     border-color: var(--cor, #E4DF6E);
 }
-/* background instagram */
-.socials{
-    background-image: url('../images/bg-paralax-insta.png');
-}
+
 /* background color rosa */
 .socials .overlay:before{
     background: rgba(228, 223, 110, 0.5);
