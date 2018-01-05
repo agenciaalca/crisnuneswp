@@ -14,7 +14,6 @@ Tags: responsive, blog, bootstrap
 }
 
 .logo{
-    
     background-image: url("./assets/images/logocor1.png");
 }
 
@@ -101,4 +100,231 @@ Tags: responsive, blog, bootstrap
 /* over botao contato */
 .contactForm #submit:hover{
     background-color: var(--cor, #DF556B);
+}
+
+/* ARQUIVO EXTERNO COMUM - POST E SINGLE */
+
+.content{    
+    padding-top: 50px;
+    padding-bottom:  50px;
+}
+.header-page,
+.header-single{
+    background-color: var(--cor);
+    height: 20%;
+}
+.header-page,
+.header-single{
+    background-color:  var(--cor);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.22'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.page-thumbnail,
+.single-thumbnail{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.single-thumbnail{
+    margin-bottom: 10px;
+}
+.titulo{
+    padding: 7% 0;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase; 
+    letter-spacing: 3px;
+}
+
+.corfonte{
+    color: var(--cor);
+}
+.info-post p{
+    color: #5d6567;
+    padding-bottom: 35px;
+    text-align: center;
+}
+.content-page,
+.content-post{
+    color: #5d6567;
+    padding: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.palavras-chaves{
+    padding-bottom: 30px;
+}
+
+.tags,
+.categorias{
+    padding: 0 0 20px;
+}
+
+.tags h3,
+.categorias h3{
+    border-bottom: 2px solid #ccc;
+    width: 3%;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.tags a,
+.categorias a{
+    color: #504949;
+    padding: 14px;
+}
+.tags a:hover,
+.categorias a:hover{
+    color: #fff;
+}
+.tags span,
+.categorias span{
+    margin: 5px;
+    padding:  5px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-color: var(--cor);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+}
+.tags span:hover,
+.categorias span:hover{
+    background-color: var(--cor);
+    text-decoration: none;
+}
+
+
+/*navegaçao dos posts */
+.navegacao{
+    padding: 25px 0 40px;
+    margin-bottom: 40px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.navegacao a{
+    color: var(--cor);
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.navegacao a:hover{
+    color: #020202;
+    letter-spacing: 4px;
+}
+.navegacao span{
+    color: var(--cor);
+}
+.navigation.post-navigation {
+    border-bottom: none;
+    border-top: none;
+}
+
+.nav-previous > a{
+    float: left;
+}
+
+.nav-next > a {
+    float: right;
+}
+.nav-previous span.meta-nav{
+    display: block;	
+}
+.nav-next span.meta-nav{
+    display: block;
+}
+/* page navigation*/
+.pagination{
+    border-radius: 0;
+    padding: 20px 0 0;
+}
+.pagination > li > a{
+    color:rgba(0, 0, 0, 0.6);
+    font-family: lato;
+}
+.pagination > li > span {
+    color:rgba(255,255,255, 0.8);
+    background-color: var(--cor);
+}
+.pagination > li > a:hover{
+    color: #eee;
+    background-color: var(--cor);
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget-area{
+    font-size: 90%;
+
+}
+
+.widget-title {
+    color: var(--cor);
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+div.widget-area section {
+    margin:15px 0;
+    padding-top: 15px;
+    /*border-top: 2px solid;*/
+}
+
+.widget ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget ul.children, .widget ul.sub-menu{
+    margin-left: 15px;
+}
+
+.widget ul li{
+    padding: 7px 0;
+    border-bottom: 1px solid #eee;
+}
+.widget a{
+    color: #5d6567;
+    text-decoration: none;
+}
+.widget a:active,
+.widget a:hover{
+    /*cor padrao do tema setado diretamente no atributo pois não aceita variavel */
+    border-bottom: 3px solid #0b59a3;
+}
+.widget_recent_entries img {
+    float: left;
+    height: 50px;
+    margin-right: 10px;
+    width: 70px;
+}
+
+.recent-posts-text span {
+    color: var(--cor);
+    display: block;
+    font-size: 12px;
+}
+
+.widget select {
+    width: 100%;
+}
+
+/* search form */
+.searchform{
+    padding: 15px 0 30px;
+}
+.searchform .input,
+.searchform .form-control{
+    padding: 0;
+}
+
+@media screen and (max-width: 1023px){
+    .titulo{
+        padding: 15% 0;
+        font-size: 26px;
+        letter-spacing: 1px;
 }
