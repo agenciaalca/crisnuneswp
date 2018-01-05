@@ -6,10 +6,12 @@
         <meta name="author" content="Agencia Alca" />
         <meta name="description" content="Cris Nunes - Coach profissional"/>
         <meta name="keywords" content="coach"/>
-        
 
-        <title><?= bloginfo(); wp_title('-', true, 'left'); ?> </title>
-        <?php wp_head(); ?>
+
+        <title><?= bloginfo();
+wp_title('-', true, 'left');
+?> </title>
+<?php wp_head(); ?>
         <!--Stylesheet-->
 
     </head>
@@ -38,59 +40,41 @@
         <!--Wrapper-->
         <div id="wrapper">
 
-
-
-
             <!--Header-->
             <header id="header" >
 
                 <!--Main header-->
-                <div class="mainHeader default">
+                    <?php if (is_home()) : ?>
+                    <div class="mainHeader default">
+                     <?php else : ?>
+                        <div>
+                    <?php endif; ?>
 
-
-                    <!--Container-->
-                    <div class="container clearfix">
-                        <div class="three columns logoHolder">
-                            <!--Logo-->
-                            <div class="logo">
-                                <!-- imagem vindo do css -->
+                        <!--Container-->
+                        <div class="container clearfix">
+                            <div class="three columns logoHolder">
+                                <!--Logo-->
+                                <div class="logo">
+                                    <!-- imagem vindo do css -->
+                                </div>
+                                <!--End logo-->
                             </div>
-                            <!--End logo-->
+
+
+                            <div class="thirteen columns tRight">
+
+                                <a href="#" class="mobileBtn" ><i class="icon-menu"></i></a>
+                                <!--Navigation-->
+                                <nav class="mainNav" >
+<?php wp_nav_menu($args); ?>
+                                </nav>
+                            </div>
                         </div>
-
-
-                        <div class="thirteen columns tRight">
-
-                            <a href="#" class="mobileBtn" ><i class="icon-menu"></i></a>
-                            <!--Navigation-->
-                            <nav class="mainNav" >
-                            <?php wp_nav_menu( $args );  ?>
-
-<!--                                <ul>
-                                    <li><a class="scroll" href="#about">About us</a></li>
-                                    <li><a class="scroll" href="#services">Services</a></li>
-                                    <li><a class="scroll" href="#pricing">Pricing</a></li>
-                                    <li><a class="scroll" href="#portfolio">Portfolio</a></li>
-                                    <li><a class="scroll" href="#blog">Blog</a></li>
-                                    <li><a class="scroll" href="#contact">Contact</a></li>
-
-                                </ul>-->
-
-                            </nav>
-                            <!--End navigation-->
-
-                        </div>
-                        <!--End container-->
-
-
-
-
+                        <!--End main header-->
                     </div>
-                    <!--End main header-->
-                </div>
 
             </header>
             <!--End header-->
 
-
+        </div>
 
