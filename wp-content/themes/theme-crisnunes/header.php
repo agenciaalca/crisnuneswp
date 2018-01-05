@@ -7,74 +7,43 @@
         <meta name="description" content="Cris Nunes - Coach profissional"/>
         <meta name="keywords" content="coach"/>
 
-
-        <title><?= bloginfo();
-wp_title('-', true, 'left');
-?> </title>
-<?php wp_head(); ?>
-        <!--Stylesheet-->
-
+        <title><?= bloginfo(); wp_title('-', true, 'left'); ?> </title>
+        <?php wp_head(); ?>
     </head>
 
     <body>
-
-        <!-- Preloader -->
         <div id="loader">
-            <!-- Preloader inner -->
             <div id="loaderInner">
-
-                <!-- Loader bars -->
                 <div class="loaderBars">
                     <span class="bar1 bar"></span>
                     <span class="bar2 bar"></span>
                     <span class="bar3 bar"></span>
                 </div>
-                <!-- End loader bars -->
-
             </div>
-            <!-- End preloader inner -->
         </div>
-        <!-- End preloader -->
-
-
-        <!--Wrapper-->
+        
+        <!-- container -->
         <div id="wrapper">
-
-            <!--Header-->
             <header id="header" >
-
-                <!--Main header-->
-                    <?php if (is_home()) : ?>
+                <?php if (is_home()) : ?>
                     <div class="mainHeader default">
-                     <?php else : ?>
-                        <div>
-                    <?php endif; ?>
-
-                        <!--Container-->
+                <?php else : ?>
+                    <div>
+                <?php endif; ?>
                         <div class="container clearfix">
                             <div class="three columns logoHolder">
-                                <!--Logo-->
                                 <div class="logo">
                                     <!-- imagem vindo do css -->
                                 </div>
-                                <!--End logo-->
                             </div>
-
-
                             <div class="thirteen columns tRight">
-
                                 <a href="#" class="mobileBtn" ><i class="icon-menu"></i></a>
-                                <!--Navigation-->
                                 <nav class="mainNav" >
-<?php wp_nav_menu($args); ?>
+                                    <!-- menu do wordpress -->
+                                    <?php wp_nav_menu($args); ?>
                                 </nav>
                             </div>
                         </div>
                         <!--End main header-->
                     </div>
-
             </header>
-            <!--End header-->
-
-        </div>
-
