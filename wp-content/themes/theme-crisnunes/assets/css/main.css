@@ -2727,7 +2727,7 @@ ul#category li a {
 }
 
 .insta {
-    
+
     padding:60px 0;
     height:213px;
     overflow:hidden;
@@ -2888,16 +2888,47 @@ span.arrow i{
     width: 80%;
 }
 
-
-
-
 .inputColumns  .column1 {
     float: left;
     width: 70%;
+    position: relative;
 } 
 .inputColumns  .column2 {
     float: left;
     width: 30%;
+
+  position: relative;
+}
+
+.column2::before {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  width: 1%;
+  vertical-align: middle;
+}
+.column2 p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 20px;
+}
+
+.column3 {
+    float: left;
+    width: 75%;
+} 
+
+.column4 {
+    float: left;
+    width: 25%;
+
+}
+.column4  .btn{
+    position: absolute;
+    bottom: 10px;
+    right: 2%;
+    margin-bottom: 14px;
 }
 
 .inputColumns  .column1 .columnInner {
@@ -3156,8 +3187,15 @@ span.arrow i{
 @media  screen and (min-width: 1680px) {
 
 }
-
-
+@media screen and (max-width: 1024px) {
+    .inputColumns  .column3 ,
+    .inputColumns  .column4{
+        width: 100%;
+    }
+    .column4  .btn{
+        position: static;
+    }
+}
 /*iPad lanscape*/
 @media screen and (max-device-width: 960px) and (min-width: 1000px) and (max-width: 1030px){
     input, textarea{-webkit-appearance: none;-webkit-border-radius:0;}

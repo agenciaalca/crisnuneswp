@@ -229,7 +229,7 @@
                         sed do eiusmod tempor incididunt ut labore et dolore.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore.
-                    
+
                     </p>
                 </div>
                 <!--End large intro-->
@@ -443,48 +443,33 @@
                                     <div class="columnInner">
                                         <input type="text" name="telefone" id="telefone" value="" placeholder="Telefone *">
                                     </div>
-                                    <textarea rows="5" cols="45" id="message" placeholder="Mensagem *" name="mensagem"></textarea>
+                                    <div class="column3">
+                                        <textarea rows="5" cols="45" id="message" placeholder="Mensagem *" name="mensagem"></textarea>
+                                    </div>
+                                    <div class="column4">
+                                        <div id="submit" class="btn">Enviar</div>
+                                    </div>
                                 </div>
 
                                 <!--Column-->
                                 <div class="column2">
                                     <div class="columnInner">
-                                        <p>Av, 4 - St. Oeste, Goiânia - GO, 74280-220</p>
+                                        <p>Av, 4 - St. Oeste, Goiânia - GO, 74280-220<br><br>
+                                        (62) 3480293840<br>
+                                        (62) 2309480293</p>
                                     </div>
-                                    <div class="columnInner">
-                                        <p>(62) 3480293840</p>
-                                        <p>(62) 2309480293</p>
-                                    </div>
-                                    
+
                                 </div>
-                                
-                               
+
+
 
                             </div>
                             <!--End input columns-->
 
 
-<!--                            Input columns
-                            <div class="inputColumns clearfix">
 
-                                <div class="column1">
-                                    <textarea rows="5" cols="45" id="message" placeholder="Mensagem *" name="mensagem"></textarea>
-                                </div>
 
-                                Column
-                                <div class="column2">
-                                    <div class="columnInner">
-                                        <p>(62) 3480293840</p>
-                                        <p>(62) 2309480293</p>
-                                    </div>
-                                </div>
-                                End column
 
-                            </div>
-                            End input columns-->
-
-                            
-                            <div id="submit" class="btn">Enviar Mensagem</div>
                         </form>
 
 
