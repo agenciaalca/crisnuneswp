@@ -147,7 +147,7 @@ if (!function_exists('paginacao_blog')) :
 
         if ($links) :
             ?>
-            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="blog">
                 <nav class="navigation paging-navigation text-center" role="navigation">
                     <h1 class="screen-reader-text"><?php _e(''); ?></h1>
                     <ul class="pagination">

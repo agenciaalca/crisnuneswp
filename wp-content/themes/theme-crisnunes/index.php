@@ -219,7 +219,6 @@
             </div>
             <!--End title-->
 
-
             <!--Container-->
             <div class="container clearfix">
 
@@ -235,150 +234,52 @@
                 <!--End large intro-->
 
                 <!--Latest holder-->
+
                 <div class="latestHolder margTop clearfix tLeft">
+                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                            <!--Post large latest-->
+                            <div class="postLarge last one-third column">
 
-                    <!--Post large latest-->
-                    <div class="postLarge last one-third column">
+                                <!--Post content-->
+                                <div class="postContent">
 
-                        <!--Post content-->
-                        <div class="postContent">
+                                    <div class="postTitle">
+                                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
-                            <div class="postTitle">
-                                <h1><a href="<?php echo get_template_directory_uri(); ?>/blog_single.php">Image blog post</a></h1>
+                                        <!--Post meta-->
+                                        <div class="postMeta">
+                                            <!--<span class="metaCategory"><?php // the_category(); ?> - </span>-->
+                                            <span class="metaDate"><?php the_date(); ?></span>
+                                        </div>
+                                        <!--End post meta-->
 
-                                <!--Post meta-->
-                                <div class="postMeta">
-                                    <span class="metaCategory"><a href="#">Web Design - </a></span>
-                                    <span class="metaDate"><a href="#">04 Oct - </a></span>
-                                    <span class="metaComments"><a href="#">17 Comments</a></span>
+                                    </div>
+
+                                    <!--Post image-->
+                                    <div class="postMedia">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <?php the_post_thumbnail(false, array('class' => 'img-responsive')); ?>
+                                        </a>
+                                    </div>
+                                    <!--End post image-->
+
+                                    <p><?php the_excerpt(); ?></p>
+
+                                    <a class="btn more border" href="<?php the_permalink(); ?>">saiba mais</a>
                                 </div>
-                                <!--End post meta-->
+                                <!--End post content-->	
 
                             </div>
-
-                            <!--Post image-->
-                            <div class="postMedia">
-                                <a href="<?php echo get_template_directory_uri(); ?>/blog_single.php">
-                                    <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/images/blogImages/bg3.jpg">
-                                </a>
-                            </div>
-                            <!--End post image-->
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                            <a class="btn more border" href="<?php echo get_template_directory_uri(); ?>/blog_single_sb.html">Read more</a>
-
-
-                        </div>
-                        <!--End post content-->	
-
-                    </div>
+                            <?php
+                        endwhile;
+                        paginacao_blog();
+                    endif;
+                    ?>
                     <!--End post large latest-->
-
-
-
-                    <!--Post large latest-->
-                    <div class="postLarge last one-third column">
-
-                        <!--Post content-->
-                        <div class="postContent">
-
-                            <div class="postTitle">
-                                <h1><a href="<?php echo get_template_directory_uri(); ?>/blog_single.html">slider blog post</a></h1>
-
-                                <!--Post meta-->
-                                <div class="postMeta">
-                                    <span class="metaCategory"><a href="#">Web Design - </a></span>
-                                    <span class="metaDate"><a href="#">04 Oct - </a></span>
-                                    <span class="metaComments"><a href="#">17 Comments</a></span>
-                                </div>
-                                <!--End post meta-->
-
-                            </div>
-
-                            <!--Post image-->
-                            <div class="postMedia postSlider slider flexslider">
-                                <ul class="slides">
-                                    <li><a href="<?php echo get_template_directory_uri(); ?>/blog_single.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blogImages/bg1.jpg" alt=""/></a></li>
-                                    <li><a href="<?php echo get_template_directory_uri(); ?>/blog_single.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blogImages/bg2.jpg" alt="" /></a></li>
-                                </ul>
-                            </div>
-                            <!--End post image-->
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                            <a class="btn more border" href="blog_single_sb.html">Read more</a>
-
-
-                        </div>
-                        <!--End post content-->	
-
-                    </div>
-                    <!--End post large latest-->
-
-
-
-                    <!--Post large latest-->
-                    <div class="postLarge last one-third column  ">
-
-                        <!--Post content-->
-                        <div class="postContent">
-
-
-                            <div class="postTitle">
-                                <h1><a href="blog_single.php.html">Audio Blog Post</a></h1>
-
-
-                                <!--Post meta-->
-                                <div class="postMeta">
-                                    <span class="metaCategory"><a href="#">Web Design - </a></span>
-                                    <span class="metaDate"><a href="#">04 Oct - </a></span>
-                                    <span class="metaComments"><a href="#">17 Comments</a></span>
-                                </div>
-                                <!--End post meta-->
-                            </div>
-
-                            <!--Post image-->
-                            <div class="postMedia audio">
-                                <iframe height="163"  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139083759&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>										
-                            </div>
-                            <!--End post image-->
-
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                            <a class="btn more border" href="blog_single_sb.html">Read more</a>
-
-
-                        </div>
-                        <!--End post content-->	
-
-                    </div>
-                    <!--End post large latest-->
-
                 </div>
-                <!--End latest holder-->
-
-
-                <!--View all-->
-                <div class="viewAll margLTop">
-                    <a class="btn" href="blog.html">veja mais</a>	
-                </div>
-                <!--End view all-->
-
-
+                <!--End container-->
             </div>
-            <!--End container-->
-
-
-        </div>
-        <!--End blog holder-->
-
-
-
+            <!--End blog holder-->
     </section>
     <!--End blog section-->
 
@@ -455,8 +356,8 @@
                                 <div class="column2">
                                     <div class="columnInner">
                                         <p>Av, 4 - St. Oeste, Goiânia - GO, 74280-220<br><br>
-                                        (62) 3480293840<br>
-                                        (62) 2309480293</p>
+                                            (62) 3480293840<br>
+                                            (62) 2309480293</p>
                                     </div>
 
                                 </div>

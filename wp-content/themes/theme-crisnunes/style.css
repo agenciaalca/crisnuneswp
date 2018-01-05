@@ -237,6 +237,7 @@ Tags: responsive, blog, bootstrap
 .pagination{
     border-radius: 0;
     padding: 20px 0 0;
+
 }
 .pagination > li > a{
     color:rgba(0, 0, 0, 0.6);
@@ -327,4 +328,5 @@ div.widget-area section {
         padding: 15% 0;
         font-size: 26px;
         letter-spacing: 1px;
+    }
 }
