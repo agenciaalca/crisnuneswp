@@ -1,4 +1,4 @@
-<?php include_once 'header.php'; ?>
+﻿<?php include_once 'header.php'; ?>
 
 <!--Main slider-->
 <div class="mainSliderHolder">
@@ -27,59 +27,32 @@
     <!-- section Sobre -->
     <div id="sobre" class="aboutIntro bgGreyDark  ofsTop ofsBottom margLBottom">
         <div class="container clearfix">
-            <div class="title light ofsBMedium">
-                <h1>Sobre<span class="plus">+</span></h1>
-            </div>
+            
             <div class="aboutIntroContent">
-                <h1>Lorem Ipsum is simply dummy, <span>CONSECTETUER</span></h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <h1>Missão</h1>
+                <p>
+		Fazer com que o cliente venha a pensar sobre a sua essência e o seu propósito de vida, motivacionais que o levam a querer lutar por uma
+		causa, uma mudança de vida, ou alguma conquista específica. Mostrando seu propósito potencial que muitas das vezes encontra-se escondido.
                 </p>
-                <a class="btn" href="#">saiba mais</a>
+		
+		<h1>Visão</h1>
+                <p>
+		Empenhar na valorização humana, trazendo a importância do EU em cada ser, aperfeiçoando cada dia mais em metas e propósitos, trazendo
+		a satisfação pessoal.
+                </p>
+
+		<h1>Valores</h1>
+                <p>
+		- Humanidade: Acreditar que todos são iguais e merecedores de conquistas.</br>
+		- Integridade: Ser sincero e defender aquilo em que acredita.</br>
+		- Visão Holística: ter capacidade de compreender a todos.</br>
+		- Gratidão: agradecer pelas conquistas.
+                </p>
+                
             </div>
         </div>
     </div>
     <!--fim section sobre-->
-
-    <!-- servicos -->
-    <div id="servicos" class="expertiseHolder margLBottom">
-        <div class="container clearfix">
-            <div class="title dark tCenter ofsBottom">
-                <h1>SERVIÇOS<span class="plus">+</span></h1>
-            </div>
-
-            <div class="exp one-third column tCenter ">
-                <div class="expIco "></div>
-
-                <div class="expDet">
-                    <h2 class="expTitle">LOREM IPSUM</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore.
-                    </p>
-                    <a href="#">saiba mais</a>
-                </div>
-            </div>
-
-            <div class="exp one-third column tCenter selected ">
-                <div class="expIco "></div>
-                <div class="expDet">
-                    <h2 class="expTitle">Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <a href="#">saiba mais</a>
-                </div>
-            </div>
-
-            <div class="exp one-third column tCenter ">
-                <div class="expIco "></div>
-                <div class="expDet">
-                    <h2 class="expTitle">Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <a href="#">saiba mais</a>
-                </div>
-            </div>
-        </div>
-    </div><!-- fim serviços -->
 
     <!--call to action -->
     <div id="call" class="shorten clearfix">
@@ -87,13 +60,13 @@
             <div class="servSht">
                 <div class="servImg overlay"></div>
                 <div class="inner">
-                    <h1>palestras</h1>	
+                    <h1>Psicologia Positiva</h1>	
                 </div>
             </div>
             <div class="worksSht">
                 <div class="workImg overlay"></div>
                 <div class="inner">
-                    <h1>psicologia positiva</h1>
+                    <h1>Coach Emocional</h1>
                 </div>
             </div>
         </div>
@@ -113,16 +86,10 @@
 <section id="blog" class="tCenter ">
     <div class="blogHolder  ofsTop ofsBottom ">
         <div class="title dark ">
-            <h1>últimas postagens no blog<span class="plus">+</span></h1>
+            <h1><span class="plus">BLOG</span></h1>
         </div>
         <div class="container clearfix">
-            <div class="largeIntro  ofsTSmall">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore.
-                </p>
-            </div>
+            
 
             <div class="latestHolder margTop clearfix tLeft">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -196,9 +163,9 @@
                             </div>
                             <div class="column2">
                                 <div class="columnInner">
-                                    <p>Av, 4 - St. Oeste, Goiânia - GO, 74280-220<br><br>
-                                        (62) 3480293840<br>
-                                        (62) 2309480293</p>
+                                    <p>Av T7, nº 371, Ed Lourenço Office, Sala 2101 a 2108<br><br>
+                                        (62) 62 3215-1780<br>
+                                        (62) 62 9 9105-2705</p>
                                 </div>
                             </div>
                         </div>
