@@ -4,7 +4,11 @@
 }
 
 .logo{
-    background-image: url("../images/logocor4.png");
+    background-image: url("../images/logo-azul-4.png");
+}
+.logo img{
+    width: 162px;
+    height: 40px;
 }
 .slides .overlay:before{
     background: rgba(223, 85, 107, 0.5);

@@ -4,7 +4,11 @@
 }
 
 .logo{
-    background-image: url("../images/logocor3.png");
+    background-image: url("../images/logo-amarelo-3.png");
+}
+.logo img{
+    width: 162px;
+    height: 40px;
 }
 .slides .overlay:before{
     background: rgba(228, 223, 110, 0.5);

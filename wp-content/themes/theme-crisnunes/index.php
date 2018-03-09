@@ -1,26 +1,45 @@
 ﻿<?php include_once 'header.php'; ?>
 
-<!--Main slider-->
-<div class="mainSliderHolder">
 
-    <div class="mainSlider flexslider">
-        <ul class="slides">
-            <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.png" height="918px" class="slide"  alt=""/></li>
-            <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.png"  height="918px" class="slide" alt=""/></li>
-        </ul>
+<?php
+		if ( have_rows( 'slider', 'option' ) ):
+	?>
+		<div class="mainSliderHolder">
+            <div class="mainSlider flexslider">
+                <ul class="slides">
+				<?php
+					$cont = 0;
+                    while ( have_rows( 'slider', 'option' ) ) : the_row();
+                        $imagem = get_sub_field( 'imagem', 'option' );
+						$descricao = get_sub_field( 'descricao', 'option' );
+						$size = 'thumbnail';
+						$thumb = $imagem['sizes'][$size];
 
-        <div class="slidesInner">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logocor1.png" alt=""/>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						$cont++;
+				
+                    if ( !empty( $imagem ) ): ?>
+                        <li class="overlay"><img src="<?php echo $thumb; ?>" height="918px" class="slide"  alt="Cris"/></li>    
+                    <?php else : ?>	
+                        <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.png" height="918px" class="slide"  alt=""/></li>
+                    <?php endif; ?>
+                </ul>
+                        
+                <div class="slidesInner">
+                    <div class="logomarca"></div>
+                    <p><?php echo $descricao; ?></p>
+                </div>
 
-            <ul class="socialsSlider">
-                <li><a href="#"><i class="icon-facebook"></i></a></li>
-                <li><a href="#"><i class="icon-instagram"></i></a></li>
-            </ul>
-
+                <ul class="socialsSlider">
+                    <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-instagram"></i></a></li>
+                </ul>
+                <?php endwhile; ?>
+            </div>
         </div>
-    </div>
-</div><!-- fim main slider -->
+    <?php else :
+        echo 'nada aqui tem';
+	endif;
+?>
 
 <section  class="tCenter">
     

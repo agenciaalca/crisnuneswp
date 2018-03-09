@@ -3,7 +3,11 @@
     --cor: #932A3B;
 }
 .logo{
-    background-image: url("../images/logocor2.png");
+    background-image: url("../images/logo-vermelho-2.png");
+}
+.logo img{
+    width: 162px;
+    height: 40px;
 }
 .slides .overlay:before{
     background: rgba(147, 42, 59, 0.5);

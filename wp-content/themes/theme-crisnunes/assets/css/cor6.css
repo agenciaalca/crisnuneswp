@@ -4,7 +4,11 @@
 }
 
 .logo{
-    background-image: url("../images/logocor6.png");
+    background-image: url("../images/logo-bege-6.png");
+}
+.logo img{
+    width: 162px;
+    height: 40px;
 }
 
 .slides .overlay:before{

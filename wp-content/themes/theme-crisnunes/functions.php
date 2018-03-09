@@ -187,6 +187,16 @@ if (function_exists('acf_add_options_page')) {
         'menu_title' => 'Slider',
         'parent_slug' => 'option-page',
     ));
+    acf_add_options_sub_page(array(
+        'page_title' => 'Sobre',
+        'menu_title' => 'Sobre',
+        'parent_slug' => 'option-page',
+    ));
+    acf_add_options_sub_page(array(
+        'page_title' => 'Serviços',
+        'menu_title' => 'Serviços',
+        'parent_slug' => 'option-page',
+    ));
 }
 add_filter('init', 'my_custom_sizes');
 

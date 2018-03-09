@@ -14,7 +14,12 @@ Tags: responsive, blog, bootstrap
 }
 
 .logo{
-    background-image: url("./assets/images/logocor1.png");
+    background-image: url("./assets/images/logo-rosa-1.png");
+}
+.slides .logomarca{
+    background-image: url("./assets/images/marca-rosa-1.png");
+    width: 80px;
+    height: 80px;
 }
 
 .slides .overlay:before{
@@ -110,7 +115,7 @@ Tags: responsive, blog, bootstrap
 }
 .header-page,
 .header-single{
-    background-color: var(--cor);
+    background-color: var(--cor, #DF556B);
     height: 20%;
 }
 .header-page,
@@ -184,7 +189,7 @@ Tags: responsive, blog, bootstrap
     letter-spacing: 1px;
     text-transform: uppercase;
     display: inline-block;
-    border-color: var(--cor);
+    border-color: var(--cor, #DF556B);
     border-width: 2px;
     border-style: solid;
     border-radius: 25px;
@@ -237,7 +242,7 @@ Tags: responsive, blog, bootstrap
 .pagination{
     border-radius: 0;
     padding: 20px 0 0;
-
+        
 }
 .pagination > li > a{
     color:rgba(0, 0, 0, 0.6);
@@ -245,11 +250,11 @@ Tags: responsive, blog, bootstrap
 }
 .pagination > li > span {
     color:rgba(255,255,255, 0.8);
-    background-color: var(--cor);
+    background-color: var(--cor, #DF556B);
 }
 .pagination > li > a:hover{
     color: #eee;
-    background-color: var(--cor);
+    background-color: var(--cor, #DF556B);
 }
 
 /*--------------------------------------------------------------
@@ -261,7 +266,7 @@ Tags: responsive, blog, bootstrap
 }
 
 .widget-title {
-    color: var(--cor);
+        color: var(--cor, #DF556B);
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 15px;
