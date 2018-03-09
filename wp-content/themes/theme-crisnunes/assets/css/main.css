@@ -2772,7 +2772,7 @@ ul#category li a {
 .insta {
 
     padding:60px 0;
-    height:213px;
+    /* height:213px; */
     overflow:hidden;
 }
 
@@ -2813,6 +2813,7 @@ ul#category li a {
     font-size:13px;
     display:block;
     text-transform:none;
+    color: white;
 }
 
 
@@ -3462,7 +3463,7 @@ span.arrow i{
     .halfDesc{width:100%;}
     .halfDesc .halfInner{position:relative; padding: 100px 10%;margin:0; }
     .instaTitle h3{font-size:23px;}
-    .insta {padding: 28px 0;height:160px;}
+    .insta {padding: 28px 0;}
     .instaInner .instaFeed li{width:50%;}
     .feedTw h3{margin-top:40px;}
     .tweets .tweet_list{padding:0;}

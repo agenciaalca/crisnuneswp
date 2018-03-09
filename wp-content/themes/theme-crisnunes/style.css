@@ -21,7 +21,11 @@ Tags: responsive, blog, bootstrap
     width: 80px;
     height: 80px;
 }
-
+.socialsSlider{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
 .slides .overlay:before{
     background: rgba(223, 85, 107, 0.5);
     content: "";
@@ -31,6 +35,16 @@ Tags: responsive, blog, bootstrap
     left:0;
     top:0;
     z-index:0;
+}
+/* SOBRE */
+.aboutIntro{
+    position: relative;
+}
+.imagemfixa{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 600px;
 }
 /* icone plus */
 .plus{

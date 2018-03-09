@@ -6,18 +6,18 @@
 	?>
 		<div class="mainSliderHolder">
             <div class="mainSlider flexslider">
-                <ul class="slides">
+                
 				<?php
-					$cont = 0;
-                    while ( have_rows( 'slider', 'option' ) ) : the_row();
-                        $imagem = get_sub_field( 'imagem', 'option' );
-						$descricao = get_sub_field( 'descricao', 'option' );
-						$size = 'thumbnail';
-						$thumb = $imagem['sizes'][$size];
+                $cont = 0;
+                while ( have_rows( 'slider', 'option' ) ) : the_row();
+                    $imagem = get_sub_field( 'imagem', 'option' );
+                    $size = 'full';
+                    $thumb = $imagem['sizes'][$size];
 
-						$cont++;
-				
-                    if ( !empty( $imagem ) ): ?>
+                    $cont++;
+                ?>
+                <ul class="slides">
+                    <?php if ( !empty( $imagem ) ): ?>
                         <li class="overlay"><img src="<?php echo $thumb; ?>" height="918px" class="slide"  alt="Cris"/></li>    
                     <?php else : ?>	
                         <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.png" height="918px" class="slide"  alt=""/></li>
@@ -26,12 +26,11 @@
                         
                 <div class="slidesInner">
                     <div class="logomarca"></div>
-                    <p><?php echo $descricao; ?></p>
                 </div>
 
                 <ul class="socialsSlider">
-                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                    <li><a href="#"><i class="icon-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/Cris-Nunes-461102784301526/" target="_blank"><i class="icon-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/crisnunescoach/" target="_blank"><i class="icon-instagram"></i></a></li>
                 </ul>
                 <?php endwhile; ?>
             </div>
@@ -44,32 +43,26 @@
 <section  class="tCenter">
     
     <!-- section Sobre -->
-    <div id="sobre" class="aboutIntro bgGreyDark  ofsTop ofsBottom margLBottom">
+    <div id="sobre" class="aboutIntro bgGreyDark  ofsTop  ">
         <div class="container clearfix">
-            
             <div class="aboutIntroContent">
-                <h1>Missão</h1>
-                <p>
-		Fazer com que o cliente venha a pensar sobre a sua essência e o seu propósito de vida, motivacionais que o levam a querer lutar por uma
-		causa, uma mudança de vida, ou alguma conquista específica. Mostrando seu propósito potencial que muitas das vezes encontra-se escondido.
-                </p>
-		
-		<h1>Visão</h1>
-                <p>
-		Empenhar na valorização humana, trazendo a importância do EU em cada ser, aperfeiçoando cada dia mais em metas e propósitos, trazendo
-		a satisfação pessoal.
-                </p>
-
-		<h1>Valores</h1>
-                <p>
-		- Humanidade: Acreditar que todos são iguais e merecedores de conquistas.</br>
-		- Integridade: Ser sincero e defender aquilo em que acredita.</br>
-		- Visão Holística: ter capacidade de compreender a todos.</br>
-		- Gratidão: agradecer pelas conquistas.
-                </p>
-                
+            <?php the_field( 'conteudosobre', 'option' ); ?>
             </div>
+            
         </div>
+        
+        <?php 
+            
+
+            $image = get_field('image');
+            $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+            if( $image ) {
+                ?>
+                <div class="imagemfixa">
+                <img src="<?php echo wp_get_attachment_image( $image, $size ); ?>" >
+                </div>
+                <?php }
+            ?>
     </div>
     <!--fim section sobre-->
 
@@ -92,10 +85,10 @@
 
         <div class="shortenBtn clearfix">
             <div class="servBtn">
-                <a class="scroll" href="#">+</a>	
+                <a class="scroll" href="http://agenciaalca.com/projetos/crisnunes/psicologia-positiva/">+</a>	
             </div>
             <div class="workBtn">
-                <a class="scroll" href="#">+</a>	
+                <a class="scroll" href="http://agenciaalca.com/projetos/crisnunes/coach-emocional/">+</a>	
             </div>
         </div>
     </div><!-- fim call to action -->
@@ -108,35 +101,32 @@
             <h1><span class="plus">BLOG</span></h1>
         </div>
         <div class="container clearfix">
-            
-
-            <div class="latestHolder margTop clearfix tLeft">
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <div class="postLarge last one-third column">
-                    <div class="postContent">
-                        <div class="postTitle">
-                            <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                            <div class="postMeta">
-                                <!--<span class="metaCategory"><?php // the_category(); ?> - </span>-->
-                                <span class="metaComments"><?php the_date(); ?></span>
-                            </div>
+        <div class="latestHolder margTop clearfix tLeft">
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <div class="postLarge last one-third column">
+                <div class="postContent">
+                    <div class="postTitle">
+                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                        <div class="postMeta">
+                            <span class="metaCategory"><?php the_category(); ?></span>
                         </div>
-                        <div class="postMedia">
-                            <a href="<?php the_permalink(); ?>">
-                                <?php the_post_thumbnail(false, array('class' => 'img-responsive')); ?>
-                            </a>
-                        </div>
-                        <p><?php the_excerpt(); ?></p>
-                        <a class="btn more border" href="<?php the_permalink(); ?>">saiba mais</a>
                     </div>
+                    <div class="postMedia">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_post_thumbnail(false, array('class' => 'img-responsive')); ?>
+                        </a>
+                    </div>
+                    <p><?php the_excerpt(); ?></p>
+                    <a class="btn more border" href="<?php the_permalink(); ?>">saiba mais</a>
                 </div>
-                <?php
-                    endwhile;
-                    paginacao_blog();
-                    endif;
-                ?>
             </div>
+            <?php
+                endwhile;
+                paginacao_blog();
+                endif;
+            ?>
         </div>
+    </div>
 </section><!-- fim blog -->
 
 <!-- Instagram -->
@@ -147,7 +137,10 @@
         </div>
         <div class="instaTitle">
             <div class="instaIco"><i class="icon-instagram"></i></div>
-            <h3>Siga no instagram<span>@coachcrisnunes</span></h3>
+            <h3>Siga no instagram<a href="https://www.instagram.com/crisnunescoach" target="_blank"><span>@crisnunescoach</span></a></h3>
+            <br>
+            <div class="instaIco"><i class="icon-facebook"></i></div>
+            <h3>Siga no facebook<span><a href="https://www.facebook.com/Cris-Nunes-461102784301526/" target="_blank"><span>Cris Nunes Coach</span></a></h3>
         </div>
     </div>
 </section><!-- fim instagram -->
@@ -182,9 +175,9 @@
                             </div>
                             <div class="column2">
                                 <div class="columnInner">
-                                    <p>Av T7, nº 371, Ed Lourenço Office, Sala 2101 a 2108<br><br>
-                                        (62) 62 3215-1780<br>
-                                        (62) 62 9 9105-2705</p>
+                                    <p><?php the_field( 'endereco', 'option' ); ?><br><br>
+                                        <?php the_field( 'telefone-1', 'option' ); ?><br>
+                                        <?php the_field( 'telefone-2', 'option' ); ?></p>
                                 </div>
                             </div>
                         </div>

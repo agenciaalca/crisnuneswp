@@ -9,7 +9,7 @@
 </div>
 
 <div class="container">
-    <div class="col-md-8 col-sm-12 col-xs-12">
+    <div class="col-md-12 col-sm-12 col-xs-12">
         <div class=" content">
             <?php if (has_post_thumbnail()) : ?>
                 <div class="single-thumbnail">
@@ -27,7 +27,6 @@
                                 <strong class="corfonte">Postado por:</strong> <?php the_author(); ?> <strong class="corfonte">em</strong> <?php the_date(); ?>
                             </p>
                         </div>
-
                         <div class="content-post">
                             <?php the_content(); ?>
                         </div>
@@ -37,7 +36,7 @@
                     ?>
                     <div class="artigo">
                         <h2>Erro 404! Nada Encontrado</h2>
-                        <a href="http://tonvalim.com.br" class="btn btn-custom">Voltar para página principal</a>
+                        <a href="#" class="btn btn-custom">Voltar para página principal</a>
                     </div>            
                 <?php endif; ?>  
             </div>
@@ -71,8 +70,6 @@
             </div>
         </div>
     </div>
-<!--    <div class="col-md-4 ">
-        <?php get_sidebar(); ?>
-    </div>-->
+
 </div>
 <?php get_footer(); ?>

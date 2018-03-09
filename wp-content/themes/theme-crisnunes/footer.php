@@ -1,6 +1,6 @@
 <!--Footer-->	
 <footer id="footer" class="footer tCenter">
-    <div class="footerBottom  ofsBMedium">
+    <div class="footerBottom  ofsBSmall">
         <div class="container clearfix">
             <div class="fbInner">
 <!--                <div class="top">

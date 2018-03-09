@@ -192,11 +192,7 @@ if (function_exists('acf_add_options_page')) {
         'menu_title' => 'Sobre',
         'parent_slug' => 'option-page',
     ));
-    acf_add_options_sub_page(array(
-        'page_title' => 'Serviços',
-        'menu_title' => 'Serviços',
-        'parent_slug' => 'option-page',
-    ));
+    
 }
 add_filter('init', 'my_custom_sizes');
 
@@ -207,5 +203,6 @@ add_filter('init', 'my_custom_sizes');
 
 function my_custom_sizes($sizes) {
     add_image_size('thumbnail', 600, 300, true);
-    add_image_size('thumbnail', 600, 300, true);
+    add_image_size('full', 1900, 1276, true);
+    add_image_size('medium', 510, 340, true);
 }
