@@ -10,7 +10,13 @@
     width: 162px;
     height: 40px;
 }
-
+.logomarca{
+    background-image: url("../assets/images/marca-bege-6.png");
+}
+.logomarca img{
+    height: 300px;
+    width: 300px;
+}
 .slides .overlay:before{
     background: rgba(218, 196, 182, 0.5);
     content: "";
@@ -28,7 +34,7 @@
 }
 /* background sobre */
 .bgGreyDark{
-    background-image: url('../images/background.png');
+    background-color: var(--cor, #DAC4B6);
 }
 /* icone serviços rosa */
 .expIco{

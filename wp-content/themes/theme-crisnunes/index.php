@@ -25,13 +25,14 @@
                 </ul>
                         
                 <div class="slidesInner">
-                    <div class="logomarca"></div>
+                    <!-- <div class="logomarca"></div> -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/marca.png" />
                 </div>
 
-                <ul class="socialsSlider">
+                <!-- <ul class="socialsSlider">
                     <li><a href="https://www.facebook.com/Cris-Nunes-461102784301526/" target="_blank"><i class="icon-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/crisnunescoach/" target="_blank"><i class="icon-instagram"></i></a></li>
-                </ul>
+                </ul> -->
                 <?php endwhile; ?>
             </div>
         </div>
@@ -43,26 +44,15 @@
 <section  class="tCenter">
     
     <!-- section Sobre -->
-    <div id="sobre" class="aboutIntro bgGreyDark  ofsTop  ">
+    <div id="sobre" class="aboutIntro bgGreyDark ofsTop">
         <div class="container clearfix">
             <div class="aboutIntroContent">
-            <?php the_field( 'conteudosobre', 'option' ); ?>
+                <?php the_field( 'conteudosobre', 'option' ); ?>
             </div>
-            
         </div>
-        
-        <?php 
-            
-
-            $image = get_field('image');
-            $size = 'medium'; // (thumbnail, medium, large, full or custom size)
-            if( $image ) {
-                ?>
-                <div class="imagemfixa">
-                <img src="<?php echo wp_get_attachment_image( $image, $size ); ?>" >
-                </div>
-                <?php }
-            ?>
+        <div class="imagemfixa">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cris-nunes.png"  alt="Coach Cris Nunes"/>
+        </div>
     </div>
     <!--fim section sobre-->
 

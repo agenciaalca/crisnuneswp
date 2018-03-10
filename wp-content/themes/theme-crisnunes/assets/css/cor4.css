@@ -10,6 +10,14 @@
     width: 162px;
     height: 40px;
 }
+
+.logomarca{
+    background-image: url("../assets/images/marca-azul-4.png");
+}
+.logomarca img{
+    height: 300px;
+    width: 300px;
+}
 .slides .overlay:before{
     background: rgba(223, 85, 107, 0.5);
     content: "";
@@ -27,7 +35,7 @@
 }
 /* background sobre */
 .bgGreyDark{
-    background-image: url('../images/background.png');
+    background-color: var(--cor, #6794C6);
 }
 /* icone serviços rosa */
 .expIco{

@@ -233,7 +233,7 @@
 .logo {
     margin-top: 10px;
     width: 162px;
-    height: 40px;
+    height: 50px;
 }
 
 /*End header*/
@@ -285,7 +285,7 @@ nav.mainNav li a{
 
 
 .mobileBtn i{
-    font-size:22px;
+    font-size:2em;
     color:#2c2c2c;
 }
 
@@ -341,7 +341,7 @@ nav.mainNav li a{
 }
 
 .slidesInner img{
-    width:20% !important;
+    width:20%;
 }
 
 
@@ -2813,7 +2813,7 @@ ul#category li a {
     font-size:13px;
     display:block;
     text-transform:none;
-    color: white;
+            color: white;
 }
 
 

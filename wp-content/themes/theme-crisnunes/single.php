@@ -17,7 +17,6 @@
                 </div>
             <?php endif; ?>
 
-            <div class="row">
                 <?php
                 if (have_posts()) :
                     while (have_posts()) : the_post();
@@ -39,7 +38,6 @@
                         <a href="#" class="btn btn-custom">Voltar para página principal</a>
                     </div>            
                 <?php endif; ?>  
-            </div>
             <div class="navegacao">
                 <?php
                 the_post_navigation(array(

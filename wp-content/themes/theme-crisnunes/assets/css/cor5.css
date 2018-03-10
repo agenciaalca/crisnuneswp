@@ -10,6 +10,13 @@
     width: 162px;
     height: 40px;
 }
+.logomarca{
+    background-image: url("../assets/images/marca-azulescuro-5.png");
+}
+.logomarca img{
+    height: 300px;
+    width: 300px;
+}
 .slides .overlay:before{
     background: rgba(49, 90, 146, 0.5);
     content: "";
@@ -27,7 +34,7 @@
 }
 /* background sobre */
 .bgGreyDark{
-    background-image: url('../images/background5.png');
+    background-color: var(--cor, #315A92);
 }
 /* icone serviços rosa */
 .expIco{

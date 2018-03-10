@@ -10,6 +10,13 @@
     width: 162px;
     height: 40px;
 }
+.logomarca{
+    background-image: url("../assets/images/marca-amarelo-3.png");
+}
+.logomarca img{
+    height: 300px;
+    width: 300px;
+}
 .slides .overlay:before{
     background: rgba(228, 223, 110, 0.5);
     content: "";
@@ -27,7 +34,7 @@
 }
 /* background sobre */
 .bgGreyDark{
-    background-image: url('../images/background.png');
+    background-color: var(--cor, #E4DF6E);
 }
 /* icone serviços rosa */
 .expIco{
