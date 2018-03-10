@@ -1,46 +1,46 @@
 ﻿<?php include_once 'header.php'; ?>
+<div class="mainSliderHolder">
+ 
+    <!--Main slider-->
+     <div class="mainSlider flexslider">
 
-
-<?php
-		if ( have_rows( 'slider', 'option' ) ):
-	?>
-		<div class="mainSliderHolder">
-            <div class="mainSlider flexslider">
-                
-				<?php
-                $cont = 0;
-                while ( have_rows( 'slider', 'option' ) ) : the_row();
-                    $imagem = get_sub_field( 'imagem', 'option' );
-                    $size = 'full';
-                    $thumb = $imagem['sizes'][$size];
-
-                    $cont++;
-                ?>
-                <ul class="slides">
-                    <?php if ( !empty( $imagem ) ): ?>
-                        <li class="overlay"><img src="<?php echo $thumb; ?>" height="918px" class="slide"  alt="Cris"/></li>    
-                    <?php else : ?>	
-                        <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.png" height="918px" class="slide"  alt=""/></li>
-                    <?php endif; ?>
-                </ul>
-                        
-                <div class="slidesInner">
-                    <!-- <div class="logomarca"></div> -->
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/marca.png" />
-                </div>
-
-                <!-- <ul class="socialsSlider">
-                    <li><a href="https://www.facebook.com/Cris-Nunes-461102784301526/" target="_blank"><i class="icon-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/crisnunescoach/" target="_blank"><i class="icon-instagram"></i></a></li>
-                </ul> -->
-                <?php endwhile; ?>
-            </div>
-        </div>
-    <?php else :
-        echo 'nada aqui tem';
-	endif;
-?>
-
+        <!--Slides-->
+         <ul class="slides">
+         <?php if ( have_rows( 'slider', 'option' ) ): 
+            $cont = 0;
+            while ( have_rows( 'slider', 'option' ) ) : the_row();
+                $imagem = get_sub_field( 'imagem', 'option' );
+                $size = 'full';
+                $thumb = $imagem['sizes'][$size];
+                $cont++;
+            
+                if ( !empty( $imagem ) ): ?>
+                    <li class="overlay"><img src="<?php echo $thumb; ?>"  class="slide"  alt="Cris"/></li>    
+                <?php else : ?>	
+                    <li class="overlay"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.png" height="918px" class="slide"  alt=""/></li>
+                <?php endif; 
+            endwhile;
+        endif; ?>
+        </ul>
+        <!--End slides-->
+ 
+        <!--Slides inner-->
+         <div class="slidesInner">
+             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/marca.png" alt=""/>
+ 
+            <!--Socials slider-->
+             <ul class="socialsSlider">
+                 <li><a href="#"><i class="icon-facebook"></i></a></li>
+                 <li><a href="#"><i class="icon-instagram"></i></a></li>
+             </ul>
+          <!--End socials slider-->
+ 
+         </div>
+        <!--End slides inner-->
+     </div>
+    <!--End main slider-->
+</div>
+<!--End main slider holder-->
 <section  class="tCenter">
     
     <!-- section Sobre -->

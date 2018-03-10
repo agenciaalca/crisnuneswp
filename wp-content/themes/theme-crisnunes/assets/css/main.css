@@ -305,11 +305,11 @@ nav.mainNav li a{
     overflow:hidden;
 }
 
-
+    F
 
 
 .mainSlider .slides li{
-
+    
     background-size: cover !important;
     height: 800px !important;
 
@@ -3247,8 +3247,8 @@ span.arrow i{
     .flexslider .slides > li {display: none; -webkit-backface-visibility: visible !important;} 
     .facts,.process, .testimonials, .clients {background-attachment: scroll;background-position:top center !important;background-size: cover;}
     .headerSingle{background-attachment: scroll !important;}
-    .mainSlider .slides li{background-attachment: scroll;background-position:top center !important;background-size: cover;}
-    .mainSlider .slides li{height: 100% !important;}
+    /* .mainSlider .slides li{background-attachment: scroll;background-position:top center !important;background-size: cover;} */
+    /* .mainSlider .slides li{height: 100% !important;} */
     .mainSlider .flex-control-nav{bottom:20px !important;}
     .slidesInner{margin-top:-140px}
     .slidesInner img {width: 30%!important;}
@@ -3281,7 +3281,7 @@ span.arrow i{
     .flexslider .slides > li {display: none; -webkit-backface-visibility: visible !important;} 
     .facts,.process, .testimonials, .clients {background-attachment: scroll;background-position:top center !important;background-size: cover;}
     .headerSingle{background-attachment: scroll !important;}
-    .mainSlider .slides li{height: 100% !important;}
+    /* .mainSlider .slides li{height: 100% !important;} */
     .mainSlider .flex-control-nav{bottom:20px !important;}
     .slidesInner{margin-top:-110px;}
     .slidesInner img {width: 30% !important;}
@@ -3331,7 +3331,7 @@ span.arrow i{
     .flexslider .slides > li {display: none; -webkit-backface-visibility: visible !important;} 
     .facts,.process, .testimonials, .clients {background-attachment: scroll;background-position:top center !important;background-size: cover;}
     .headerSingle{background-attachment: scroll !important;}
-    .mainSlider .slides li{height: 100% !important;}
+    /* .mainSlider .slides li{height: 100% !important;} */
     .mainSlider .flex-control-nav{bottom:20px !important;}
     .slidesInner{margin-top:-100px;}
     .slidesInner p{padding:0 120px;}
@@ -3409,7 +3409,7 @@ span.arrow i{
     .flexslider .slides > li {display: none; -webkit-backface-visibility: visible !important;} 
     .facts,.process, .testimonials, .clients {background-attachment: scroll;background-position:top center !important;background-size: cover;}
     .headerSingle{background-attachment: scroll !important;}
-    .mainSlider .slides li{height: 100% !important;}
+    /* .mainSlider .slides li{height: 100% !important;} */
     .mainSlider .flex-control-nav{bottom:20px !important;}
     .slidesInner{margin-top:-70px;}
     .slidesInner img {width: 40% !important;}

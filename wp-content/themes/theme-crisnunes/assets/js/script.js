@@ -52,28 +52,27 @@ $('a.scroll').smoothScroll({
 
 
 $('.mainSlider').flexslider({
-	animation: "fade",
-	slideshow: true,
+	animation: "slide",
 	directionNav:false,
 	controlNav: true
 });
 
 
 
-if (!(/android|blackberry|windows phone|iphone|ipad|ipod/i).test(navigator.userAgent.toLowerCase())) {
+// if (!(/android|blackberry|windows phone|iphone|ipad|ipod/i).test(navigator.userAgent.toLowerCase())) {
 		
-$(window).scroll(function(){
-	var scrolling = $(window).scrollTop();
-	if($(window).scrollTop() < $('.mainSlider').outerHeight()){
-		$('.mainSlider .slidesInner').css('opacity',(1-(scrolling/300)));
-		/*$('.mainSlider').css({transform: 'translateY('+ scrolling/2+'px)'});*/
-		$('.mainSlider').css({transform: "translate3d(0, "+ scrolling/2+"px, 0)"});
+// $(window).scroll(function(){
+// 	var scrolling = $(window).scrollTop();
+// 	if($(window).scrollTop() < $('.mainSlider').outerHeight()){
+// 		$('.mainSlider .slidesInner').css('opacity',(1-(scrolling/300)));
+// 		/*$('.mainSlider').css({transform: 'translateY('+ scrolling/2+'px)'});*/
+// 		$('.mainSlider').css({transform: "translate3d(0, "+ scrolling/2+"px, 0)"});
 		
-	}
-});
+// 	}
+// });
 
 
-}
+// }
 
 
 //---------------------------------- End main slider setup-----------------------------------------//
@@ -414,19 +413,6 @@ $('.mainNav li a').click(function(){
 
 
 
-//---------------------------------- Instagram feed -----------------------------------------//
-
-jQuery.fn.spectragram.accessData={
-	accessToken:'322548972.1677ed0.6c838619fa454449ac3b0acb3df8314e',
-	clientID:'322548972'}
-	
-$('.instaFeed').spectragram('getUserFeed', {
-		query: 'insideenvato', //Change the instagram feed user to display the feed that you want.
-		size: 'large',
-});
-
-
-//---------------------------------- End instagram feed -----------------------------------------//
 
 
 
