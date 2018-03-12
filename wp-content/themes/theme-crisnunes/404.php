@@ -1,8 +1,11 @@
-<?php
+<?php get_header(); ?>
+<hr>
+<div class="content"  style="min-height: 500px;">
+	<div class="container">
+		<h1>404 - Nada Encontrado!</h1>
+		<p>Lamentamos, mas o que você procura não foi encontrado.</p>
+		<a href="#" class="btn btn-custom">Voltar para página principal</a>
+	</div>
+</div>
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+b<?php get_footer(); ?>
