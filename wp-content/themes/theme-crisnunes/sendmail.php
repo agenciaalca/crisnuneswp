@@ -30,24 +30,18 @@ if (isset($_POST['btnSend'])) {
         if (mail($email_destinatario, $email_assunto, nl2br($email_conteudo), $email_cabecalho)) {
             
             //mostra mensagem de envio com sucesso
-            $msg = '<div class="alert alert-success alert-dismissable">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>Mensagem enviada com sucesso!</strong> 
-            </div>';
+            $msg = '
+                <strong>Mensagem enviada com sucesso!</strong> ';
         } else {
             //mostra mensagem de erro ao enviar
-            $msg = '<div class="alert alert-danger alert-dismissable">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>Erro ao enviar mensagem, tente novamente! </strong> 
-            </div>';
+            $msg = '
+                <strong>Erro ao enviar mensagem, tente novamente! </strong> ';
         }
         
     } else {
         
         //mostra mensagem de erro caso algum dos campos esteja vazio
-        $msg = '<div class="alert alert-danger alert-dismissable">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>Preencha todos os campos!! </strong> 
-            </div>';
+        $msg = '
+                <strong>Preencha todos os campos!! </strong> ';
     }
 }

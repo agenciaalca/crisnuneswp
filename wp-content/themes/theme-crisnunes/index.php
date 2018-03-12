@@ -1,5 +1,4 @@
 ﻿<?php include_once 'header.php'; ?>
-<?php include_once 'sendmail.php'; ?>
 
 <div class="mainSliderHolder">
  
@@ -148,11 +147,12 @@
         <div class="container clearfix">
             <div class="contactInner fourteen columns ">
                 <div class="contactForm tLeft margTMedium">
-                    <form action="index.php#formulario" method="post">
+                    
                         <div class="inputColumns clearfix">
+                        <form action="<?php echo get_template_directory_uri(); ?>/send.php" method="post">
                             <div class="column1">
                                 <div class="columnInner">
-                                    <input type="text" name="nome" id="nome" value="" placeholder="Nome *">
+                                    <input type="text" name="name" id="name" value="" placeholder="Nome *">
                                 </div>
                                 <div class="columnInner">
                                     <input type="text" name="email" id="email" value="" placeholder="Email *">
@@ -161,14 +161,15 @@
                                     <input type="text" name="telefone" id="telefone" value="" placeholder="Telefone *">
                                 </div>
                                 <div class="column3">
-                                    <textarea rows="5" cols="45" name="mensagem" id="mensagem" placeholder="Mensagem *" ></textarea>
+                                    <textarea rows="5" cols="45" name="message" id="message" placeholder="Mensagem *" ></textarea>
                                 </div>
                                 <div class="column4">
-                                    <div id="submit" name="btnSend" class="btn">Enviar</div>
-                                    <a name="formulario"></a>
-                                    <div class="mensagem-alerta"><?php echo $msg ?></div>
+                                    <div id="submit"  class="btn">Enviar</div>
                                 </div>
                             </div>
+                        </form>
+                        
+								
                             <div class="column2">
                                 <div class="columnInner">
                                     <p><?php the_field( 'endereco', 'option' ); ?><br><br>
@@ -177,7 +178,9 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+                        <div id="success"><h2>Sua mensagem foi enviada!</h2></div>
+						<div id="error"><h2>Mensagem não enviada, tente novamente!.</h2></div>
+                    
                 </div>
             </div>
         </div>
