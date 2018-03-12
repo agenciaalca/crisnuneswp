@@ -203,5 +203,8 @@ add_filter('init', 'my_custom_sizes');
 function my_custom_sizes($sizes) {
     add_image_size('thumbnail', 600, 300, true);
     add_image_size('full', 1900, 1276, true);
-    add_image_size('medium', 510, 340, true);
+    add_image_size('medio', 510, 340, true);
+}
+if ( function_exists( 'add_image_size' ) ) { 
+    add_image_size('medio', 510, 340, true);
 }

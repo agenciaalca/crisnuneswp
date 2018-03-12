@@ -53,10 +53,19 @@
                 <?php the_field( 'conteudosobre', 'option' ); ?>
             </div>
         </div>
-        <div class="imagemfixa">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cris-nunes.png"  alt="Coach Cris Nunes"/>
-        </div>
-    </div>
+        
+        <?php
+            $foto = get_field( 'foto' , 'option');        
+            $size = 'full';
+            $thumb = $foto['sizes'][$size];
+        ?>   
+            <div class="imagemfixa">
+                <?php if ( !empty( $foto ) ): ?>
+                    <img src="<?php echo $thumb; ?>" alt="Cris"/> 
+                <?php else : ?>	
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cris-nunes.png"  alt="Coach Cris Nunes"/>
+                <?php endif; ?>
+            </div>
     <!--fim section sobre-->
 
     <!--call to action -->

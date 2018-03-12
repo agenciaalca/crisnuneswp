@@ -7,9 +7,9 @@
     background-image: url("../images/logo-azulescuro-5.png");
 }
 
-.logomarca{
+/* .logomarca{
     background-image: url("../images/marca-azulescuro-5.png");
-}
+} */
 
 .slides .overlay:before{
     background: rgba(49, 90, 146, 0.5);

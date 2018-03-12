@@ -6,9 +6,9 @@
     background-image: url("../images/logo-vermelho-2.png");
 }
 
-.logomarca{
+/* .logomarca{
     background-image: url("../images/marca-vermelho-2.png");
-}
+} */
 
 .slides .overlay:before{
     background: rgba(147, 42, 59, 0.5);

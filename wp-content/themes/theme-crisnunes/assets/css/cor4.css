@@ -8,9 +8,9 @@
 }
 
 
-.logomarca{
+/* .logomarca{
     background-image: url("../images/marca-azul-4.png");
-}
+} */
 
 .slides .overlay:before{
     background: rgba(223, 85, 107, 0.5);

@@ -7,9 +7,9 @@
     background-image: url("../images/logo-amarelo-3.png");
 }
 
-.logomarca{
+/* .logomarca{
     background-image: url("../images/marca-amarelo-3.png");
-}
+} */
 
 .slides .overlay:before{
     background: rgba(228, 223, 110, 0.5);

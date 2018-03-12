@@ -7,9 +7,9 @@
     background-image: url("../images/logo-bege-6.png");
 }
 
-.logomarca{
+/* .logomarca{
     background-image: url("../images/marca-bege-6.png");
-}
+} */
 
 .slides .overlay:before{
     background: rgba(218, 196, 182, 0.5);
