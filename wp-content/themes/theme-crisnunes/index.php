@@ -1,4 +1,6 @@
 ﻿<?php include_once 'header.php'; ?>
+<?php include_once 'sendmail.php'; ?>
+
 <div class="mainSliderHolder">
  
     <!--Main slider-->
@@ -26,12 +28,14 @@
  
         <!--Slides inner-->
          <div class="slidesInner">
-             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/marca.png" alt=""/>
+             <!-- Logo lotus-->
+             <div class="logomarca"></div>
+             <!--End Lotus-->
  
             <!--Socials slider-->
              <ul class="socialsSlider">
-                 <li><a href="#"><i class="icon-facebook"></i></a></li>
-                 <li><a href="#"><i class="icon-instagram"></i></a></li>
+                 <li><a href="https://www.facebook.com/Cris-Nunes-461102784301526/"><i class="icon-facebook"></i></a></li>
+                 <li><a href="https://www.instagram.com/crisnunescoach"><i class="icon-instagram"></i></a></li>
              </ul>
           <!--End socials slider-->
  
@@ -144,11 +148,11 @@
         <div class="container clearfix">
             <div class="contactInner fourteen columns ">
                 <div class="contactForm tLeft margTMedium">
-                    <form action="send.php" method="post">
+                    <form action="index.php#formulario" method="post">
                         <div class="inputColumns clearfix">
                             <div class="column1">
                                 <div class="columnInner">
-                                    <input type="text" name="name" id="name" value="" placeholder="Nome *">
+                                    <input type="text" name="nome" id="nome" value="" placeholder="Nome *">
                                 </div>
                                 <div class="columnInner">
                                     <input type="text" name="email" id="email" value="" placeholder="Email *">
@@ -157,10 +161,12 @@
                                     <input type="text" name="telefone" id="telefone" value="" placeholder="Telefone *">
                                 </div>
                                 <div class="column3">
-                                    <textarea rows="5" cols="45" id="message" placeholder="Mensagem *" name="mensagem"></textarea>
+                                    <textarea rows="5" cols="45" name="mensagem" id="mensagem" placeholder="Mensagem *" ></textarea>
                                 </div>
                                 <div class="column4">
-                                    <div id="submit" class="btn">Enviar</div>
+                                    <div id="submit" name="btnSend" class="btn">Enviar</div>
+                                    <a name="formulario"></a>
+                                    <div class="mensagem-alerta"><?php echo $msg ?></div>
                                 </div>
                             </div>
                             <div class="column2">

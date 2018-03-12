@@ -6,17 +6,11 @@
 .logo{
     background-image: url("../images/logo-azulescuro-5.png");
 }
-.logo img{
-    width: 162px;
-    height: 40px;
-}
+
 .logomarca{
-    background-image: url("../assets/images/marca-azulescuro-5.png");
+    background-image: url("../images/marca-azulescuro-5.png");
 }
-.logomarca img{
-    height: 300px;
-    width: 300px;
-}
+
 .slides .overlay:before{
     background: rgba(49, 90, 146, 0.5);
     content: "";

@@ -6,17 +6,11 @@
 .logo{
     background-image: url("../images/logo-amarelo-3.png");
 }
-.logo img{
-    width: 162px;
-    height: 40px;
-}
+
 .logomarca{
-    background-image: url("../assets/images/marca-amarelo-3.png");
+    background-image: url("../images/marca-amarelo-3.png");
 }
-.logomarca img{
-    height: 300px;
-    width: 300px;
-}
+
 .slides .overlay:before{
     background: rgba(228, 223, 110, 0.5);
     content: "";

@@ -5,17 +5,11 @@
 .logo{
     background-image: url("../images/logo-vermelho-2.png");
 }
-.logo img{
-    width: 162px;
-    height: 40px;
-}
+
 .logomarca{
-    background-image: url("../assets/images/marca-vermelho-2.png");
+    background-image: url("../images/marca-vermelho-2.png");
 }
-.logomarca img{
-    height: 300px;
-    width: 300px;
-}
+
 .slides .overlay:before{
     background: rgba(147, 42, 59, 0.5);
     content: "";

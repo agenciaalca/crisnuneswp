@@ -6,17 +6,11 @@
 .logo{
     background-image: url("../images/logo-bege-6.png");
 }
-.logo img{
-    width: 162px;
-    height: 40px;
-}
+
 .logomarca{
-    background-image: url("../assets/images/marca-bege-6.png");
+    background-image: url("../images/marca-bege-6.png");
 }
-.logomarca img{
-    height: 300px;
-    width: 300px;
-}
+
 .slides .overlay:before{
     background: rgba(218, 196, 182, 0.5);
     content: "";
