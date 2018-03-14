@@ -1,4 +1,4 @@
-﻿<?php include_once 'header.php'; ?>
+﻿<?php require_once 'header.php'; ?>
 
 <div class="mainSliderHolder">
  
@@ -59,13 +59,14 @@
             $size = 'full';
             $thumb = $foto['sizes'][$size];
         ?>   
-            <div class="imagemfixa">
-                <?php if ( !empty( $foto ) ): ?>
-                    <img src="<?php echo $thumb; ?>" alt="Cris"/> 
-                <?php else : ?>	
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cris-nunes.png"  alt="Coach Cris Nunes"/>
-                <?php endif; ?>
-            </div>
+        <div class="imagemfixa">
+            <?php if ( !empty( $foto ) ): ?>
+                <img src="<?php echo $thumb; ?>" alt="Cris"/> 
+            <?php else : ?>	
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cris-nunes.png"  alt="Coach Cris Nunes"/>
+            <?php endif; ?>
+        </div>
+    </div>
     <!--fim section sobre-->
 
     <!--call to action -->
